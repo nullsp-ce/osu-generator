@@ -29,6 +29,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 button:hover {
     background-color: #222222;
@@ -36,6 +37,13 @@ button:hover {
 .data-display {
     margin-top: 20px;
     padding: 10px;
-    background-color: #e9ecef;
+    background-color: #1c1719;
     border-radius: 5px;
+}
+.entry {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.entry:last-child {
+    border-bottom: none;
 }
