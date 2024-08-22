@@ -30,7 +30,25 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Table rows will be added here dynamically -->
+                <tr><td>NM1</td><td colspan="8"></td></tr>
+                <tr><td>NM2</td><td colspan="8"></td></tr>
+                <tr><td>NM3</td><td colspan="8"></td></tr>
+                <tr><td>NM4</td><td colspan="8"></td></tr>
+                <tr><td>NM5</td><td colspan="8"></td></tr>
+                <tr><td>NM6</td><td colspan="8"></td></tr>
+                <tr><td>HD1</td><td colspan="8"></td></tr>
+                <tr><td>HD2</td><td colspan="8"></td></tr>
+                <tr><td>HD3</td><td colspan="8"></td></tr>
+                <tr><td>HD4</td><td colspan="8"></td></tr>
+                <tr><td>HR1</td><td colspan="8"></td></tr>
+                <tr><td>HR2</td><td colspan="8"></td></tr>
+                <tr><td>HR3</td><td colspan="8"></td></tr>
+                <tr><td>HR4</td><td colspan="8"></td></tr>
+                <tr><td>DT1</td><td colspan="8"></td></tr>
+                <tr><td>DT2</td><td colspan="8"></td></tr>
+                <tr><td>DT3</td><td colspan="8"></td></tr>
+                <tr><td>DT4</td><td colspan="8"></td></tr>
+                <tr><td>TB</td><td colspan="8"></td></tr>
             </tbody>
         </table>
     </div>
@@ -52,13 +70,12 @@
                     });
 
                     // Group by slot
-                    const slotMap = filteredMaps.reduce((acc, map) => {
-                        if (!acc[map.slot]) {
-                            acc[map.slot] = [];
+                    const slotMap = {};
+                    filteredMaps.forEach(map => {
+                        if (!slotMap[map.slot]) {
+                            slotMap[map.slot] = map;
                         }
-                        acc[map.slot].push(map);
-                        return acc;
-                    }, {});
+                    });
 
                     // Populate the table
                     populateTable(slotMap);
@@ -68,48 +85,36 @@
 
         function populateTable(slotMap) {
             const tbody = document.getElementById('dataDisplay').getElementsByTagName('tbody')[0];
-            tbody.innerHTML = ''; // Clear existing data
 
-            Object.keys(slotMap).forEach(slot => {
-                const maps = slotMap[slot];
-                maps.forEach(map => {
-                    // Fetch map details (e.g., title, cs, ar, od, sr)
-                    fetchMapDetails(map.link).then(details => {
-                        const row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td><img src="${details.banner}" alt="Map Image" style="width:90px;height:25px;"></td>
-                            <td><a href="${details.title}" target="_blank">${map.link}</a></td>
-                            <td>${details.sr}</td>
-                            <td>${details.cs}</td>
-                            <td>${details.ar}</td>
-                            <td>${details.od}</td>
-                            <td>${details.bpm}</td>
-                            <td>${details.drain}</td>
-                        `;
-                        tbody.appendChild(row);
-                    });
-                });
+            // Clear existing data and initialize preset rows
+            tbody.innerHTML = '';
+            const slots = ['NM1', 'NM2', 'NM3', 'NM4', 'NM5', 'NM6',
+                           'HD1', 'HD2', 'HD3', 'HD4',
+                           'HR1', 'HR2', 'HR3', 'HR4',
+                           'DT1', 'DT2', 'DT3', 'DT4', 'TB'];
+
+            slots.forEach(slot => {
+                const row = document.createElement('tr');
+                const map = slotMap[slot] || {}; // Get the map for this slot or use an empty object if none
+                row.innerHTML = `
+                    <td>${slot}</td>
+                    <td><img src="${getImageUrl(map.link || '')}" alt="Map Image" style="width:90px;height:25px;"></td>
+                    <td><a href="${map.link || '#'}" target="_blank">${map.title || 'N/A'}</a></td>
+                    <td>${map.sr || 'N/A'}</td>
+                    <td>${map.cs || 'N/A'}</td>
+                    <td>${map.ar || 'N/A'}</td>
+                    <td>${map.od || 'N/A'}</td>
+                    <td>${map.bpm || 'N/A'}</td>
+                    <td>${map.drain || 'N/A'}</td>
+                `;
+                tbody.appendChild(row);
             });
         }
 
-        function fetchMapDetails(link) {
-            // This function should be implemented to fetch map details
-            // For demonstration purposes, we return dummy data
-            // Replace with actual API call or scraping logic
-            return new Promise(resolve => {
-                setTimeout(() => {
-                    resolve({
-                        banner: 'https://assets.ppy.sh/beatmaps/1948258/covers/cover.jpg?1686425494',
-                        title: 'Artist - Title [Difficulty]',
-                        sr: '7.00',
-                        cs: '4.0',
-                        ar: '9.5',
-                        od: '9.0',
-                        bpm: '200',
-                        drain: '2:45',
-                    });
-                }, 1000);
-            });
+        function getImageUrl(link) {
+            const match = link.match(/\/beatmapsets\/(\d+?)#/);
+            const mapId = match ? match[1] : '';
+            return mapId ? `https://assets.ppy.sh/beatmapsets/${mapId}/covers/cover.jpg` : 'https://via.placeholder.com/100';
         }
     </script>
 </body>
