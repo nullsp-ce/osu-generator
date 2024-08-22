@@ -71,6 +71,9 @@
         .dt-group td.slot-group {
             color: #ff4e6f;
         }
+        .fm-group td.slot-group {
+            color: #66ffcc;
+        }
         .tb-group td.slot-group {
             color: #6563de;
         }
@@ -158,7 +161,8 @@
             const slots = ['NM1', 'NM2', 'NM3', 'NM4', 'NM5', 'NM6',
                            'HD1', 'HD2', 'HD3', 'HD4',
                            'HR1', 'HR2', 'HR3', 'HR4',
-                           'DT1', 'DT2', 'DT3', 'DT4', 'TB'];
+                           'DT1', 'DT2', 'DT3', 'DT4', 
+                           'FM1', 'FM2', 'FM3', 'TB'];
 
             for (const slot of slots) {
                 const row = document.createElement('tr');
@@ -167,19 +171,20 @@
                 row.innerHTML = `
                     <td class="slot-group">${slot}</td>
                     <td><img src="${getImageUrl(map.link)}" alt="Map Image"></td>
-                    <td class="mapname"><a href="${map.link || '#'}" target="_blank">${map.name || 'Unknown'}</a></td>
-                    <td class="sr">${map.sr || '?'}</td>
-                    <td>${map.cs || '?'}</td>
-                    <td>${map.ar || '?'}</td>
-                    <td>${map.od || '?'}</td>
-                    <td>${map.bpm || '?'}</td>
-                    <td>${map.drain || '?'}</td>
+                    <td class="mapname"><a href="${map.link || '#'}" target="_blank">${map.name || ''}</a></td>
+                    <td class="sr">${map.sr || ''}</td>
+                    <td>${map.cs || ''}</td>
+                    <td>${map.ar || ''}</td>
+                    <td>${map.od || ''}</td>
+                    <td>${map.bpm || ''}</td>
+                    <td>${map.drain || ''}</td>
                 `;
 
                 if (slot.startsWith('NM')) row.classList.add('nm-group');
                 else if (slot.startsWith('HD')) row.classList.add('hd-group');
                 else if (slot.startsWith('HR')) row.classList.add('hr-group');
                 else if (slot.startsWith('DT')) row.classList.add('dt-group');
+                else if (slot.startsWith('FM')) row.classList.add('fm-group');
                 else if (slot === 'TB') row.classList.add('tb-group');
 
                 tbody.appendChild(row);
