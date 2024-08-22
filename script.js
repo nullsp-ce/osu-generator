@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  apiKey: "AIzaSyBlW8rgWsL1fhNHoQeH6KffXojXMdgJedU",
+  authDomain: "osu-mappool-generator.firebaseapp.com",
   projectId: "osu-mappool-generator",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  storageBucket: "osu-mappool-generator.appspot.com",
+  messagingSenderId: "22640096550",
+  appId: "1:22640096550:web:173a9cea9f31796cff7de7"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
