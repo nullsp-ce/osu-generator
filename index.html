@@ -5,6 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>osu!gen</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        body {
+            font-family: "Inter", "Roboto", "Montserrat", "Arial", sans-serif;
+            background-color: #1c1719;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-weight: bold;
+            color: #ff66b3;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1c1719;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ff66b3;
+            background-color: #121212;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #222222;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+        }
+        td img {
+            width: 90px;
+            height: 25px;
+        }
+        td {
+            background-color: #282828;
+        }
+        td.bold {
+            font-weight: bold;
+        }
+        .nm-group td {
+            background-color: #7cff4f;
+        }
+        .hd-group td {
+            background-color: #4fc0ff;
+        }
+        .hr-group td {
+            background-color: #f6f05c;
+        }
+        .dt-group td {
+            background-color: #ff4e6f;
+        }
+        .tb-group td {
+            background-color: #6563de;
+        }
+        td.sr {
+            background-color: #ffd966;
+        }
+        td[colspan="8"] {
+            text-align: center;
+        }
+        .group-spacing {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,91 +115,109 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td>NM1</td><td colspan="8"></td></tr>
-                <tr><td>NM2</td><td colspan="8"></td></tr>
-                <tr><td>NM3</td><td colspan="8"></td></tr>
-                <tr><td>NM4</td><td colspan="8"></td></tr>
-                <tr><td>NM5</td><td colspan="8"></td></tr>
-                <tr><td>NM6</td><td colspan="8"></td></tr>
-                <tr><td>HD1</td><td colspan="8"></td></tr>
-                <tr><td>HD2</td><td colspan="8"></td></tr>
-                <tr><td>HD3</td><td colspan="8"></td></tr>
-                <tr><td>HD4</td><td colspan="8"></td></tr>
-                <tr><td>HR1</td><td colspan="8"></td></tr>
-                <tr><td>HR2</td><td colspan="8"></td></tr>
-                <tr><td>HR3</td><td colspan="8"></td></tr>
-                <tr><td>HR4</td><td colspan="8"></td></tr>
-                <tr><td>DT1</td><td colspan="8"></td></tr>
-                <tr><td>DT2</td><td colspan="8"></td></tr>
-                <tr><td>DT3</td><td colspan="8"></td></tr>
-                <tr><td>DT4</td><td colspan="8"></td></tr>
-                <tr><td>TB</td><td colspan="8"></td></tr>
+                <tr class="nm-group"><td>NM1</td><td colspan="8">Loading...</td></tr>
+                <tr class="nm-group"><td>NM2</td><td colspan="8">Loading...</td></tr>
+                <tr class="nm-group"><td>NM3</td><td colspan="8">Loading...</td></tr>
+                <tr class="nm-group"><td>NM4</td><td colspan="8">Loading...</td></tr>
+                <tr class="nm-group"><td>NM5</td><td colspan="8">Loading...</td></tr>
+                <tr class="nm-group"><td>NM6</td><td colspan="8">Loading...</td></tr>
+                <tr class="hd-group"><td>HD1</td><td colspan="8">Loading...</td></tr>
+                <tr class="hd-group"><td>HD2</td><td colspan="8">Loading...</td></tr>
+                <tr class="hd-group"><td>HD3</td><td colspan="8">Loading...</td></tr>
+                <tr class="hd-group"><td>HD4</td><td colspan="8">Loading...</td></tr>
+                <tr class="hr-group"><td>HR1</td><td colspan="8">Loading...</td></tr>
+                <tr class="hr-group"><td>HR2</td><td colspan="8">Loading...</td></tr>
+                <tr class="hr-group"><td>HR3</td><td colspan="8">Loading...</td></tr>
+                <tr class="hr-group"><td>HR4</td><td colspan="8">Loading...</td></tr>
+                <tr class="dt-group"><td>DT1</td><td colspan="8">Loading...</td></tr>
+                <tr class="dt-group"><td>DT2</td><td colspan="8">Loading...</td></tr>
+                <tr class="dt-group"><td>DT3</td><td colspan="8">Loading...</td></tr>
+                <tr class="dt-group"><td>DT4</td><td colspan="8">Loading...</td></tr>
+                <tr class="tb-group"><td>TB</td><td colspan="8">Loading...</td></tr>
             </tbody>
         </table>
     </div>
     
     <script>
-        document.getElementById('loadData').addEventListener('click', () => {
+        document.getElementById('loadData').addEventListener('click', async () => {
             const tierInput = parseFloat(document.getElementById('tierInput').value);
             if (isNaN(tierInput) || tierInput < 6.0 || tierInput > 9.0) {
                 alert('Please enter a valid star rating between 6.0 and 9.0');
                 return;
             }
 
-            fetch('maps.json')
-                .then(response => response.json())
-                .then(data => {
-                    // Filter maps based on the input tier
-                    const filteredMaps = data.filter(map => Math.abs(map.tier - tierInput) <= 0.1);
-                    
-                    // Group maps by slot and select a random map for each slot
-                    const slotMap = {};
-                    filteredMaps.forEach(map => {
-                        if (!slotMap[map.slot]) {
-                            slotMap[map.slot] = [];
-                        }
-                        slotMap[map.slot].push(map);
-                    });
+            try {
+                const response = await fetch('maps.json');
+                const data = await response.json();
 
-                    // Randomly select one map per slot
-                    const selectedMaps = {};
-                    Object.keys(slotMap).forEach(slot => {
-                        const maps = slotMap[slot];
-                        selectedMaps[slot] = maps[Math.floor(Math.random() * maps.length)];
-                    });
+                // Filter maps based on the input tier
+                const filteredMaps = data.filter(map => Math.abs(map.tier - tierInput) <= 0.1);
+                
+                // Group maps by slot and select a random map for each slot
+                const slotMap = {};
+                filteredMaps.forEach(map => {
+                    if (!slotMap[map.slot]) {
+                        slotMap[map.slot] = [];
+                    }
+                    slotMap[map.slot].push(map);
+                });
 
-                    // Populate the table
-                    populateTable(selectedMaps);
-                })
-                .catch(error => console.error('Error fetching data:', error));
+                // Randomly select one map per slot
+                const selectedMaps = {};
+                for (const slot in slotMap) {
+                    const maps = slotMap[slot];
+                    selectedMaps[slot] = maps[Math.floor(Math.random() * maps.length)];
+                }
+
+                // Populate the table with the selected maps
+                await populateTable(selectedMaps);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
         });
 
-        function populateTable(slotMap) {
+        async function populateTable(slotMap) {
             const tbody = document.getElementById('dataDisplay').getElementsByTagName('tbody')[0];
-
-            // Clear existing data and initialize preset rows
-            tbody.innerHTML = '';
             const slots = ['NM1', 'NM2', 'NM3', 'NM4', 'NM5', 'NM6',
                            'HD1', 'HD2', 'HD3', 'HD4',
                            'HR1', 'HR2', 'HR3', 'HR4',
                            'DT1', 'DT2', 'DT3', 'DT4', 'TB'];
 
-            slots.forEach(slot => {
+            for (const slot of slots) {
                 const row = document.createElement('tr');
-                const map = slotMap[slot] || {}; // Get the map for this slot or use an empty object if none
+                const map = slotMap[slot] || {};
+
+                const mapDetails = map.link ? await fetchMapDetails(map.link) : {
+                    title: 'N/A',
+                    cs: 'N/A',
+                    ar: 'N/A',
+                    od: 'N/A',
+                    sr: 'N/A',
+                    bpm: 'N/A',
+                    drain: 'N/A',
+                };
+
                 row.innerHTML = `
-                    <td>${slot}</td>
-                    <td><img src="${getImageUrl(map.link)}" alt="Map Image" style="width:90px;height:25px;"></td>
-                    <td><a href="${map.link || '#'}" target="_blank">${fetchMapDetails(map.link) || 'N/A'}</a></td>
-                    <td>${map.sr || 'N/A'}</td>
-                    <td>${map.cs || 'N/A'}</td>
-                    <td>${map.ar || 'N/A'}</td>
-                    <td>${map.od || 'N/A'}</td>
-                    <td>${map.bpm || 'N/A'}</td>
-                    <td>${map.drain || 'N/A'}</td>
+                    <td class="bold">${slot}</td>
+                    <td><img src="${getImageUrl(map.link)}" alt="Map Image"></td>
+                    <td><a href="${map.link || '#'}" target="_blank">${mapDetails.title}</a></td>
+                    <td class="sr">${map.sr || mapDetails.sr}</td>
+                    <td>${map.cs || mapDetails.cs}</td>
+                    <td>${map.ar || mapDetails.ar}</td>
+                    <td>${map.od || mapDetails.od}</td>
+                    <td>${map.bpm || mapDetails.bpm}</td>
+                    <td>${map.drain || mapDetails.drain}</td>
                 `;
+
+                // Apply group-specific coloring
+                if (slot.startsWith('NM')) row.classList.add('nm-group');
+                else if (slot.startsWith('HD')) row.classList.add('hd-group');
+                else if (slot.startsWith('HR')) row.classList.add('hr-group');
+                else if (slot.startsWith('DT')) row.classList.add('dt-group');
+                else if (slot === 'TB') row.classList.add('tb-group');
+
                 tbody.appendChild(row);
-            });
+            }
         }
 
         function getImageUrl(link) {
@@ -123,27 +226,51 @@
             return mapId ? `https://assets.ppy.sh/beatmaps/${mapId}/covers/cover.jpg` : 'https://assets.ppy.sh/beatmaps/2078790/covers/cover.jpg';
         }
 
-        function fetchMapDetails(url) {
-            return fetch(url)
-                .then(response => response.text())
-                .then(html => {
-                    // Extract the JSON data from the script tag
-                    const jsonScriptRegex = /<script id="json-beatmapset" type="application\/json">([\s\S]*?)<\/script>/;
-                    const jsonMatch = html.match(jsonScriptRegex);
-                    if (!jsonMatch) throw new Error('JSON data not found');
-        
-                    // Parse the JSON data
-                    const jsonData = JSON.parse(jsonMatch[1]);
-        
-                    // Extract artist, title, and version
-                    const artist = jsonData.artist || 'Unknown Artist';
-                    const title = jsonData.title || 'Unknown Title';
-                    const version = jsonData.version || 'Unknown Version';
-        
-                    // Combine them into the desired format: "Artist - Title [Version]"
-                    return `${artist} - ${title} [${version}]`.replace(/\n/g, '');
-                })
-                .catch(error => console.error('Error fetching map details:', error));
+        async function fetchMapDetails(url) {
+            try {
+                const response = await fetch(url);
+                const html = await response.text();
+
+                // Extract the JSON data from the script tag
+                const jsonScriptRegex = /<script id="json-beatmapset" type="application\/json">([\s\S]*?)<\/script>/;
+                const jsonMatch = html.match(jsonScriptRegex);
+                if (!jsonMatch) throw new Error('JSON data not found');
+
+                // Parse the JSON data
+                const jsonData = JSON.parse(jsonMatch[1]);
+
+                // Extract the details
+                const artist = jsonData.artist || 'Unknown Artist';
+                const title = jsonData.title || 'Unknown Title';
+                const version = jsonData.version || 'Unknown Version';
+                const cs = jsonData.difficulty.cs || 'N/A';
+                const ar = jsonData.difficulty.ar || 'N/A';
+                const od = jsonData.difficulty.od || 'N/A';
+                const sr = jsonData.difficulty.star_rating || 'N/A';
+                const bpm = jsonData.bpm || 'N/A';
+                const drain = jsonData.hit_length || 'N/A';
+
+                return {
+                    title: `${artist} - ${title} [${version}]`,
+                    cs,
+                    ar,
+                    od,
+                    sr,
+                    bpm,
+                    drain
+                };
+            } catch (error) {
+                console.error('Error fetching map details:', error);
+                return {
+                    title: 'N/A',
+                    cs: 'N/A',
+                    ar: 'N/A',
+                    od: 'N/A',
+                    sr: 'N/A',
+                    bpm: 'N/A',
+                    drain: 'N/A'
+                };
+            }
         }
     </script>
 </body>
