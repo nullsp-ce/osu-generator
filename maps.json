@@ -192,5 +192,83 @@
         "link": "https://osu.ppy.sh/beatmapsets/2180470#osu/4605810",
         "tier": 9.0, "slot": "TB",
         "sr": "9.00", "cs": "4.2", "ar": "10.0", "od": "10.0", "bpm": "222", "drain": "5:41"
+    },
+
+
+    {
+        "name": "Shiino Kotone (CV: Kanako) - Ashita no Koto. [Extra]",
+        "link": "https://osu.ppy.sh/beatmapsets/1902629#osu/3922591",
+        "tier": 6.4, "slot": "NM1",
+        "sr": "6.43", "cs": "3.9", "ar": "9.5", "od": "9.0", "bpm": "198", "drain": "3:09"
+    }, {
+        "name": "Vulpecula - Crystallite Dream [In Heartache's Profound Love]",
+        "link": "https://osu.ppy.sh/beatmapsets/1943645#osu/4020786",
+        "tier": 6.4, "slot": "NM2",
+        "sr": "6.59", "cs": "4.0", "ar": "9.5", "od": "8.5", "bpm": "187", "drain": "3:33"
+    }, {
+        "name": "Ryokuoushoku Shakai - Michi o Yuke [Forever]",
+        "link": "https://osu.ppy.sh/beatmapsets/1961630#osu/4065519",
+        "tier": 6.4, "slot": "NM3",
+        "sr": "6.00", "cs": "4.0", "ar": "9.6", "od": "9.0", "bpm": "150", "drain": "3:28"
+    }, {
+        "name": "Raphlesia & BilliumMoto - My Love [Our Expert]",
+        "link": "https://osu.ppy.sh/beatmapsets/1388906#osu/2868387",
+        "tier": 6.4, "slot": "NM4",
+        "sr": "6.10", "cs": "4.1", "ar": "9.2", "od": "8.3", "bpm": "175", "drain": "3:42"
+    }, {
+        "name": "Raimukun - Myths Orbis [morphne & Winter's Extra]",
+        "link": "https://osu.ppy.sh/beatmapsets/1889095#osu/4212326",
+        "tier": 6.4, "slot": "NM5",
+        "sr": "6.69", "cs": "3.6", "ar": "9.5", "od": "9.0", "bpm": "210", "drain": "2:12"
+    }, {
+        "name": "senya - Zetsubou no Fuchi [Abyssal]",
+        "link": "https://osu.ppy.sh/beatmapsets/605290#osu/1278874",
+        "tier": 6.4, "slot": "HD1",
+        "sr": "6.10", "cs": "4.2", "ar": "9.2", "od": "8.2", "bpm": "174", "drain": "3:01"
+    }, {
+        "name": "MIMI feat. wanko - minimum [insane]",
+        "link": "https://osu.ppy.sh/beatmapsets/2007831#osu/4176525",
+        "tier": 6.4, "slot": "HD2",
+        "sr": "5.59", "cs": "4.0", "ar": "8.0", "od": "8.0", "bpm": "202", "drain": "2:09"
+    }, {
+        "name": "seatrus - Night Thea+er Etude [Synesthesia]",
+        "link": "https://osu.ppy.sh/beatmapsets/1667219#osu/3404214",
+        "tier": 6.4, "slot": "HD3",
+        "sr": "6.02", "cs": "4.0", "ar": "9.4", "od": "8.5", "bpm": "155", "drain": "1:54"
+    }, {
+        "name": "Hoshimachi Suisei - GHOST [KoldNoodl's Expert]",
+        "link": "https://osu.ppy.sh/beatmapsets/1726003#osu/3582596",
+        "tier": 6.4, "slot": "HR1",
+        "sr": "6.33", "cs": "5.2", "ar": "10.0", "od": "10.0", "bpm": "182", "drain": "4:15"
+    }, {
+        "name": "Kairiki bear feat. Hatsune Miku - Starry Start [Starstruck]",
+        "link": "https://osu.ppy.sh/beatmapsets/1985409#osu/4123907",
+        "tier": 6.4, "slot": "HR2",
+        "sr": "6.13", "cs": "6.5", "ar": "10.0", "od": "10.0", "bpm": "181", "drain": "2:31"
+    }, {
+        "name": "the peggies - Highlight Highlight [dahkjdas' Extra]",
+        "link": "https://osu.ppy.sh/beatmapsets/1789615#osu/3686197",
+        "tier": 6.4, "slot": "HR3",
+        "sr": "6.12", "cs": "5.2", "ar": "10.0", "od": "10.0", "bpm": "252", "drain": "3:39"
+    }, {
+        "name": "kessoku band - Korogaru Iwa, Kimi ni Asa ga Furu [Insane]",
+        "link": "https://osu.ppy.sh/beatmapsets/1909798#osu/3939073",
+        "tier": 6.4, "slot": "DT1",
+        "sr": "6.55", "cs": "4.0", "ar": "10.2", "od": "9.8", "bpm": "223", "drain": "2:53"
+    }, {
+        "name": "Dareharu - Karma [mayu's insane]",
+        "link": "https://osu.ppy.sh/beatmapsets/1478859#osu/3037814",
+        "tier": 6.4, "slot": "DT2",
+        "sr": "6.22", "cs": "4.0", "ar": "10.3", "od": "9.8", "bpm": "198", "drain": "2:39"
+    }, {
+        "name": "felys feat. Natsukawa Yoko - Celsus (LONG VERSION) [Insane]",
+        "link": "https://osu.ppy.sh/beatmapsets/1604680#osu/3276823",
+        "tier": 6.4, "slot": "DT3",
+        "sr": "6.65", "cs": "4.0", "ar": "9.9", "od": "9.8", "bpm": "247", "drain": "2:27"
+    }, {
+        "name": "Avenged Sevenfold - Blinded in Chains [Deadly Disease]",
+        "link": "https://osu.ppy.sh/beatmapsets/1914560#osu/3949741",
+        "tier": 6.4, "slot": "TB",
+        "sr": "6.58", "cs": "4.0", "ar": "9.4", "od": "9.0", "bpm": "192", "drain": "5:35"
     }
 ]
