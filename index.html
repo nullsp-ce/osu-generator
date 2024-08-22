@@ -6,10 +6,6 @@
     <title>osu!gen</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-        }
         body {
             font-family: "Inter", "Roboto", "Montserrat", "Arial", sans-serif;
             background-color: #1c1719;
@@ -30,7 +26,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         button {
-            padding: 10px 20px;
+            padding: 8px 15px;
             font-size: 1em;
             color: #ff66b3;
             background-color: #121212;
@@ -48,7 +44,7 @@
             margin-top: 20px;
         }
         th, td {
-            padding: 10px;
+            padding: 6px 10px; /* Reduced padding */
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
@@ -56,14 +52,11 @@
             background-color: #333;
         }
         td img {
-            width: 90px;
+            width: 80px;
             height: 25px;
         }
         td {
             background-color: #282828;
-        }
-        td.bold {
-            font-weight: bold;
         }
         td.slot-group {
             font-weight: bold;
@@ -85,12 +78,6 @@
         }
         td.sr {
             color: #ffd966;
-        }
-        td[colspan="8"] {
-            text-align: center;
-        }
-        .group-spacing {
-            margin-top: 15px;
         }
     </style>
 </head>
@@ -118,25 +105,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="nm-group"><td class="slot-group">NM1</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM2</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM3</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM4</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM5</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM6</td><td colspan="8"></td></tr>
-                <tr class="hd-group"><td class="slot-group">HD1</td><td colspan="8"></td></tr>
-                <tr class="hd-group"><td class="slot-group">HD2</td><td colspan="8"></td></tr>
-                <tr class="hd-group"><td class="slot-group">HD3</td><td colspan="8"></td></tr>
-                <tr class="hd-group"><td class="slot-group">HD4</td><td colspan="8"></td></tr>
-                <tr class="hr-group"><td class="slot-group">HR1</td><td colspan="8"></td></tr>
-                <tr class="hr-group"><td class="slot-group">HR2</td><td colspan="8"></td></tr>
-                <tr class="hr-group"><td class="slot-group">HR3</td><td colspan="8"></td></tr>
-                <tr class="hr-group"><td class="slot-group">HR4</td><td colspan="8"></td></tr>
-                <tr class="dt-group"><td class="slot-group">DT1</td><td colspan="8"></td></tr>
-                <tr class="dt-group"><td class="slot-group">DT2</td><td colspan="8"></td></tr>
-                <tr class="dt-group"><td class="slot-group">DT3</td><td colspan="8"></td></tr>
-                <tr class="dt-group"><td class="slot-group">DT4</td><td colspan="8"></td></tr>
-                <tr class="tb-group"><td class="slot-group">TB</td><td colspan="8"></td></tr>
+                <!-- Table content dynamically generated here -->
             </tbody>
         </table>
     </div>
@@ -194,13 +163,13 @@
                 const map = slotMap[slot] || {};
 
                 const mapDetails = map.link ? await fetchMapDetails(map.link) : {
-                    title: 'N/A',
-                    cs: 'N/A',
-                    ar: 'N/A',
-                    od: 'N/A',
-                    sr: 'N/A',
-                    bpm: 'N/A',
-                    drain: 'N/A'
+                    title: 'Unknown Title',
+                    cs: 'Unknown',
+                    ar: 'Unknown',
+                    od: 'Unknown',
+                    sr: 'Unknown',
+                    bpm: 'Unknown',
+                    drain: 'Unknown'
                 };
 
                 row.innerHTML = `
@@ -245,12 +214,12 @@
                 const artist = jsonData.artist || 'Unknown Artist';
                 const title = jsonData.title || 'Unknown Title';
                 const version = jsonData.version || 'Unknown Version';
-                const cs = jsonData.difficulty.cs || 'N/A';
-                const ar = jsonData.difficulty.ar || 'N/A';
-                const od = jsonData.difficulty.od || 'N/A';
-                const sr = jsonData.difficulty.star_rating || 'N/A';
-                const bpm = jsonData.bpm || 'N/A';
-                const drain = jsonData.hit_length || 'N/A';
+                const cs = jsonData.difficulty.cs || 'Unknown';
+                const ar = jsonData.difficulty.ar || 'Unknown';
+                const od = jsonData.difficulty.od || 'Unknown';
+                const sr = jsonData.difficulty.star_rating || 'Unknown';
+                const bpm = jsonData.bpm || 'Unknown';
+                const drain = jsonData.hit_length || 'Unknown';
 
                 return {
                     title: `${artist} - ${title} [${version}]`,
@@ -264,40 +233,20 @@
             } catch (error) {
                 console.error('Error fetching map details:', error);
                 return {
-                    title: 'N/A',
-                    cs: 'N/A',
-                    ar: 'N/A',
-                    od: 'N/A',
-                    sr: 'N/A',
-                    bpm: 'N/A',
-                    drain: 'N/A'
+                    title: 'Unknown Title',
+                    cs: 'Unknown',
+                    ar: 'Unknown',
+                    od: 'Unknown',
+                    sr: 'Unknown',
+                    bpm: 'Unknown',
+                    drain: 'Unknown'
                 };
             }
         }
 
         function clearTable() {
             const tbody = document.getElementById('dataDisplay').getElementsByTagName('tbody')[0];
-            tbody.innerHTML = `
-                <tr class="nm-group"><td class="slot-group">NM1</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM2</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM3</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM4</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM5</td><td colspan="8"></td></tr>
-                <tr class="nm-group"><td class="slot-group">NM6</td><td colspan="8"></td></tr>
-                <tr class="hd-group"><td class="slot-group">HD1</td><td colspan="8"></td></tr>
-                <tr class="hd-group"><td class="slot-group">HD2</td><td colspan="8"></td></tr>
-                <tr class="hd-group"><td class="slot-group">HD3</td><td colspan="8"></td></tr>
-                <tr class="hd-group"><td class="slot-group">HD4</td><td colspan="8"></td></tr>
-                <tr class="hr-group"><td class="slot-group">HR1</td><td colspan="8"></td></tr>
-                <tr class="hr-group"><td class="slot-group">HR2</td><td colspan="8"></td></tr>
-                <tr class="hr-group"><td class="slot-group">HR3</td><td colspan="8"></td></tr>
-                <tr class="hr-group"><td class="slot-group">HR4</td><td colspan="8"></td></tr>
-                <tr class="dt-group"><td class="slot-group">DT1</td><td colspan="8"></td></tr>
-                <tr class="dt-group"><td class="slot-group">DT2</td><td colspan="8"></td></tr>
-                <tr class="dt-group"><td class="slot-group">DT3</td><td colspan="8"></td></tr>
-                <tr class="dt-group"><td class="slot-group">DT4</td><td colspan="8"></td></tr>
-                <tr class="tb-group"><td class="slot-group">TB</td><td colspan="8"></td></tr>
-            `;
+            tbody.innerHTML = ''; // Clear the table
         }
     </script>
 </body>
