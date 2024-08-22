@@ -11,41 +11,104 @@
     <div class="container">
         <h1>osu!gen</h1>
         <p>This site randomly generates osu! tournament mappools.</p>
+        
+        <label for="tierInput">Enter target star rating (6.0 to 9.0):</label>
+        <input type="number" id="tierInput" min="6.0" max="9.0" step="0.1">
         <button id="loadData">Generate</button>
-        <div id="dataDisplay" class="data-display"></div>
+        
+        <table id="dataDisplay">
+            <thead>
+                <tr>
+                    <th>Banner</th>
+                    <th>Slot</th>
+                    <th>Artist - Title [Difficulty]</th>
+                    <th>★SR</th>
+                    <th>CS</th>
+                    <th>AR</th>
+                    <th>OD</th>
+                    <th>BPM</th>
+                    <th>Drain</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be added here dynamically -->
+            </tbody>
+        </table>
     </div>
     
     <script>
         document.getElementById('loadData').addEventListener('click', () => {
+            const tierInput = parseFloat(document.getElementById('tierInput').value);
+            if (isNaN(tierInput) || tierInput < 6.0 || tierInput > 9.0) {
+                alert('Please enter a valid tier between 6.0 and 9.0');
+                return;
+            }
+
             fetch('maps.json')
                 .then(response => response.json())
                 .then(data => {
-                    // Get 2 random entries from the data
-                    const randomEntries = getRandomEntries(data, 2);
-                    displayData(randomEntries);
+                    // Filter maps based on the input tier
+                    const filteredMaps = data.filter(map => {
+                        return Math.abs(map.tier - tierInput) <= 0.1;
+                    });
+
+                    // Group by slot
+                    const slotMap = filteredMaps.reduce((acc, map) => {
+                        if (!acc[map.slot]) {
+                            acc[map.slot] = [];
+                        }
+                        acc[map.slot].push(map);
+                        return acc;
+                    }, {});
+
+                    // Populate the table
+                    populateTable(slotMap);
                 })
                 .catch(error => console.error('Error fetching data:', error));
         });
 
-        function getRandomEntries(data, count) {
-            // Shuffle the data array and get the first 'count' entries
-            const shuffled = data.sort(() => 0.5 - Math.random());
-            return shuffled.slice(0, count);
+        function populateTable(slotMap) {
+            const tbody = document.getElementById('dataDisplay').getElementsByTagName('tbody')[0];
+            tbody.innerHTML = ''; // Clear existing data
+
+            Object.keys(slotMap).forEach(slot => {
+                const maps = slotMap[slot];
+                maps.forEach(map => {
+                    // Fetch map details (e.g., title, cs, ar, od, sr)
+                    fetchMapDetails(map.link).then(details => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${map.slot}</td>
+                            <td><a href="${map.link}" target="_blank">${map.link}</a></td>
+                            <td>${details.title}</td>
+                            <td>${details.cs}</td>
+                            <td>${details.ar}</td>
+                            <td>${details.od}</td>
+                            <td>${details.sr}</td>
+                            <td><img src="${details.image}" alt="Map Image" style="width:100px;height:auto;"></td>
+                        `;
+                        tbody.appendChild(row);
+                    });
+                });
+            });
         }
 
-        function displayData(entries) {
-            const dataDisplay = document.getElementById('dataDisplay');
-            dataDisplay.innerHTML = ''; // Clear existing data
-
-            entries.forEach(entry => {
-                const div = document.createElement('div');
-                div.classList.add('entry');
-                div.innerHTML = `
-                    <p><strong>Link:</strong> <a href="${entry.link}" target="_blank">${entry.link}</a></p>
-                    <p><strong>Tier:</strong> ${entry.tier}</p>
-                    <p><strong>Slot:</strong> ${entry.slot}</p>
-                `;
-                dataDisplay.appendChild(div);
+        function fetchMapDetails(link) {
+            // This function should be implemented to fetch map details
+            // For demonstration purposes, we return dummy data
+            // Replace with actual API call or scraping logic
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve({
+                        title: 'Example Title',
+                        cs: '4.0',
+                        ar: '9.0',
+                        od: '7.0',
+                        sr: '6.5',
+                        image: 'https://via.placeholder.com/100'
+                    });
+                }, 1000);
             });
         }
     </script>
