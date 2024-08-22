@@ -21,7 +21,7 @@
         "sr": 8.09, "cs": 4.3, "ar": 9.8, "od": 8.8, "bpm": 200, "drain": "1:45"
     }, {
         "name": "Camellia - Xeroa [Zelq's MAXIMUM+]",
-        "link": "https://osu.ppy.sh/beatmapsets/1341787#osu/3256928",
+        "link": "https://osu.ppy.sh/beatmapsets/1487999#osu/3076004",
         "tier": 9.0, "slot": "NM5",
         "sr": 9.01, "cs": 3.5, "ar": 9.8, "od": 9.4, "bpm": 301, "drain": "1:51"
     }, {
@@ -39,5 +39,23 @@
         "link": "https://osu.ppy.sh/beatmapsets/2078790#osu/4352925",
         "tier": 9.0, "slot": "TB",
         "sr": 9.04, "cs": 4.0, "ar": 10.0, "od": 10.0, "bpm": 230, "drain": "5:19"
+    },
+    
+    
+    {
+        "name": "Zekk - Fluctuation [Fractal]",
+        "link": "https://osu.ppy.sh/beatmapsets/1341787#osu/3256928",
+        "tier": 9.0, "slot": "NM4",
+        "sr": 8.40, "cs": 4.0, "ar": 10.0, "od": 9.8, "bpm": 194, "drain": "2:10"
+    }, {
+        "name": "CS4W - CX-ronos [Viripotens]",
+        "link": "https://osu.ppy.sh/beatmapsets/2180313#osu/4605501",
+        "tier": 9.0, "slot": "NM5",
+        "sr": 9.38, "cs": 3.8, "ar": 10.0, "od": 9.8, "bpm": 270, "drain": "1:45"
+    }, {
+        "name": "Kyutatsuki - SOUND ARCHITECT [Melodic Labyrinth]",
+        "link": "https://drive.google.com/file/d/19z8HRstCCiAGRwBaZ8RkLY6ma_aKbnX3/view?usp=sharing",
+        "tier": 9.0, "slot": "TB",
+        "sr": 9.00, "cs": 4.2, "ar": 10.0, "od": 10.0, "bpm": 222, "drain": "5:41"
     }
 ]
