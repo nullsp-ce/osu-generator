@@ -3,97 +3,97 @@
         "name": "Eric Saade - Popular [Celebrity]",
         "link": "https://osu.ppy.sh/beatmapsets/1343420#osu/3591213",
         "tier": 9.0, "slot": "NM1",
-        "sr": 9.37, "cs": 4.0, "ar": 10.0, "od": 10.0, "bpm": 250, "drain": "2:34"
+        "sr": "9.37", "cs": "4.0", "ar": "10.0", "od": "10.0", "bpm": "250", "drain": "2:34"
     }, {
         "name": "Raimukun - Icyxis ~True Ending~ [Blessed of Aggelos ~Fake Sanctity~]",
         "link": "https://osu.ppy.sh/beatmapsets/2078621#osu/4352514",
         "tier": 9.0, "slot": "NM2",
-        "sr": 9.23, "cs": 4.0, "ar": 9.8, "od": 9.5, "bpm": 222, "drain": "4:05"
+        "sr": "9.23", "cs": "4.0", "ar": "9.8", "od": "9.5", "bpm": "222", "drain": "4:05"
     }, {
         "name": "Rise Against - The Eco-Terrorist In Me [Albinauric]",
         "link": "https://osu.ppy.sh/beatmapsets/2078778#osu/4352883",
         "tier": 9.0, "slot": "NM3",
-        "sr": 8.70, "cs": 4.2, "ar": 9.7, "od": 9.2, "bpm": 170, "drain": "2:22"
+        "sr": "8.70", "cs": "4.2", "ar": "9.7", "od": "9.2", "bpm": "170", "drain": "2:22"
     }, {
         "name": "Zekk - Ashes [Nanachi x Aqua_ x Kristalyze x Nagaraia]",
         "link": "https://osu.ppy.sh/beatmapsets/1341787#osu/3256928",
         "tier": 9.0, "slot": "NM4",
-        "sr": 8.09, "cs": 4.3, "ar": 9.8, "od": 8.8, "bpm": 200, "drain": "1:45"
+        "sr": "8.09", "cs": "4.3", "ar": "9.8", "od": "8.8", "bpm": "200", "drain": "1:45"
     }, {
         "name": "Camellia - Xeroa [Zelq's MAXIMUM+]",
         "link": "https://osu.ppy.sh/beatmapsets/1487999#osu/3076004",
         "tier": 9.0, "slot": "NM5",
-        "sr": 9.01, "cs": 3.5, "ar": 9.8, "od": 9.4, "bpm": 301, "drain": "1:51"
+        "sr": "9.01", "cs": "3.5", "ar": "9.8", "od": "9.4", "bpm": "301", "drain": "1:51"
     }, {
         "name": "KurousaP feat. Hatsune Miku - Senbonzakura (Cut Ver.) [Dance of Tradition and Modernity]",
         "link": "https://osu.ppy.sh/beatmapsets/2078615#osu/4352488",
         "tier": 9.0, "slot": "NM6",
-        "sr": 7.04, "cs": 4.0, "ar": 8.0, "od": 9.0, "bpm": 154, "drain": "2:55"
+        "sr": "7.04", "cs": "4.0", "ar": "8.0", "od": "9.0", "bpm": "154", "drain": "2:55"
     }, {
         "name": "UKRampage - Replica feat. mami [Dailycare's Facsimile]",
         "link": "https://osu.ppy.sh/beatmapsets/1769121#osu/3772513",
         "tier": 9.0, "slot": "HD1",
-        "sr": 8.59, "cs": 4.0, "ar": 9.9, "od": 9.6, "bpm": 240, "drain": "3:02"
+        "sr": "8.59", "cs": "4.0", "ar": "9.9", "od": "9.6", "bpm": "240", "drain": "3:02"
     }, {
         "name": "komso - Eien no Shunmu [Sheep]",
         "link": "https://osu.ppy.sh/beatmapsets/1664347#osu/3397669",
         "tier": 9.0, "slot": "HD2",
-        "sr": 7.31, "cs": 5.0, "ar": 8.5, "od": 9.2, "bpm": 156, "drain": "2:30"
+        "sr": "7.31", "cs": "5.0", "ar": "8.5", "od": "9.2", "bpm": "156", "drain": "2:30"
     }, {
         "name": "Rotteen - Planet Belligerence [USA x JAPAN COLLAB]",
         "link": "https://osu.ppy.sh/beatmapsets/1288657#osu/2675228",
         "tier": 9.0, "slot": "HD3",
-        "sr": 8.53, "cs": 4.0, "ar": 10.0, "od": 9.0, "bpm": 170, "drain": "2:19"
+        "sr": "8.53", "cs": "4.0", "ar": "10.0", "od": "9.0", "bpm": "170", "drain": "2:19"
     }, {
         "name": "Marmalade butcher - Floccinaucinihilipilification [Sentimentalism]",
         "link": "https://osu.ppy.sh/beatmapsets/1331748#osu/2759110",
         "tier": 9.0, "slot": "HD4",
-        "sr": 8.37, "cs": 4.2, "ar": 9.8, "od": 9.0, "bpm": 200, "drain": "3:31"
+        "sr": "8.37", "cs": "4.2", "ar": "9.8", "od": "9.0", "bpm": "200", "drain": "3:31"
     }, {
         "name": "bj.HaLo - Ende [Black Another]",
         "link": "https://osu.ppy.sh/beatmapsets/2078759#osu/4352858",
         "tier": 9.0, "slot": "HR1",
-        "sr": 8.69, "cs": 6.5, "ar": 10.0, "od": 10.0, "bpm": 200, "drain": "1:49"
+        "sr": "8.69", "cs": "6.5", "ar": "10.0", "od": "10.0", "bpm": "200", "drain": "1:49"
     }, {
         "name": "millennium parade x Sheena Ringo - WORK [REVOLUTION (Tourney Ver.)]",
         "link": "https://osu.ppy.sh/beatmapsets/2078782#osu/4352896",
         "tier": 9.0, "slot": "HR2",
-        "sr": 7.89, "cs": 7.8, "ar": 10.0, "od": 10.0, "bpm": 210, "drain": "3:16"
+        "sr": "7.89", "cs": "7.8", "ar": "10.0", "od": "10.0", "bpm": "210", "drain": "3:16"
     }, {
         "name": "Ekcle - Crafted In Ice [CENSOLED's Extravaganza]",
         "link": "https://osu.ppy.sh/beatmapsets/1868244#osu/3876888",
         "tier": 9.0, "slot": "HR3",
-        "sr": 8.19, "cs": 5.2, "ar": 10.0, "od": 10.0, "bpm": 180, "drain": "3:50"
+        "sr": "8.19", "cs": "5.2", "ar": "10.0", "od": "10.0", "bpm": "180", "drain": "3:50"
     }, {
         "name": "UKRampage - Jack-the-Ripper [Extravaganza]",
         "link": "https://osu.ppy.sh/beatmapsets/1333932#osu/3274710",
         "tier": 9.0, "slot": "HR4",
-        "sr": 8.03, "cs": 5.6, "ar": 10.0, "od": 10.0, "bpm": 210, "drain": "3:33"
+        "sr": "8.03", "cs": "5.6", "ar": "10.0", "od": "10.0", "bpm": "210", "drain": "3:33"
     }, {
         "name": "Maneki Kecak - Atashi no Nokori Zenbu Ageru [Daydream]",
         "link": "https://osu.ppy.sh/beatmapsets/1577737#osu/3221529",
         "tier": 9.0, "slot": "DT1",
-        "sr": 9.56, "cs": 4.0, "ar": 10.5, "od": 10.6, "bpm": 273, "drain": "3:27"
+        "sr": "9.56", "cs": "4.0", "ar": "10.5", "od": "10.6", "bpm": "273", "drain": "3:27"
     }, {
         "name": "Mage - The Words I Never Said [Regret]",
         "link": "https://osu.ppy.sh/beatmapsets/1470072#osu/3018109",
         "tier": 9.0, "slot": "DT2",
-        "sr": 8.86, "cs": 3.9, "ar": 10.5, "od": 10.6, "bpm": 258, "drain": "3:17"
+        "sr": "8.86", "cs": "3.9", "ar": "10.5", "od": "10.6", "bpm": "258", "drain": "3:17"
     }, {
         "name": "YAMAGEN'S DEVILELIET - EYES OF DEVILELIET [PERNICIOUS]",
         "link": "https://osu.ppy.sh/beatmapsets/36988#osu/119238",
         "tier": 9.0, "slot": "DT3",
-        "sr": 8.91, "cs": 4.0, "ar": 10.3, "od": 9.1, "bpm": 300, "drain": "2:23"
+        "sr": "8.91", "cs": "4.0", "ar": "10.3", "od": "9.1", "bpm": "300", "drain": "2:23"
     }, {
         "name": "Satou Hiromi - Hikari [Expert]",
         "link": "https://osu.ppy.sh/beatmapsets/1918985#osu/3960019",
         "tier": 9.0, "slot": "DT4",
-        "sr": 8.65, "cs": 5.0, "ar": 9.7, "od": 10.4, "bpm": 230, "drain": "3:07"
+        "sr": "8.65", "cs": "5.0", "ar": "9.7", "od": "10.4", "bpm": "230", "drain": "3:07"
     }, {
         "name": "KEMOMIMI EDM SQUAD - THE PLATINUM TROPHY [THE BATTLE FOR TROPHY]",
         "link": "https://osu.ppy.sh/beatmapsets/2078790#osu/4352925",
         "tier": 9.0, "slot": "TB",
-        "sr": 9.04, "cs": 4.0, "ar": 10.0, "od": 10.0, "bpm": 230, "drain": "5:19"
+        "sr": "9.04", "cs": "4.0", "ar": "10.0", "od": "10.0", "bpm": "230", "drain": "5:19"
     },
 
 
@@ -101,96 +101,96 @@
         "name": "umu. - humanly [Goodbye.]",
         "link": "https://osu.ppy.sh/beatmapsets/1279689#osu/3238236",
         "tier": 9.0, "slot": "NM1",
-        "sr": 9.14, "cs": 4.0, "ar": 10.0, "od": 9.8, "bpm": 250, "drain": "3:18"
+        "sr": "9.14", "cs": "4.0", "ar": "10.0", "od": "9.8", "bpm": "250", "drain": "3:18"
     }, {
         "name": "Gram - Nibelungen [Niflungr]",
         "link": "https://osu.ppy.sh/beatmapsets/2151831#osu/4533849",
         "tier": 9.0, "slot": "NM2",
-        "sr": 8.61, "cs": 4.0, "ar": 10.0, "od": 10.0, "bpm": 222, "drain": "2:22"
+        "sr": "8.61", "cs": "4.0", "ar": "10.0", "od": "10.0", "bpm": "222", "drain": "2:22"
     }, {
         "name": "Zutto Mayonaka de Ii no ni. - Humanoid [12/29]",
         "link": "https://osu.ppy.sh/beatmapsets/2110847#osu/4431131",
         "tier": 9.0, "slot": "NM3",
-        "sr": 8.22, "cs": 4.0, "ar": 9.7, "od": 9.4, "bpm": 159, "drain": "4:05"
+        "sr": "8.22", "cs": "4.0", "ar": "9.7", "od": "9.4", "bpm": "159", "drain": "4:05"
     }, {
         "name": "Zekk - Fluctuation [Fractal]",
         "link": "https://osu.ppy.sh/beatmapsets/2058711#osu/4302884",
         "tier": 9.0, "slot": "NM4",
-        "sr": 8.40, "cs": 4.0, "ar": 10.0, "od": 9.8, "bpm": 194, "drain": "2:10"
+        "sr": "8.40", "cs": "4.0", "ar": "10.0", "od": "9.8", "bpm": "194", "drain": "2:10"
     }, {
         "name": "CS4W - CX-ronos [Viripotens]",
         "link": "https://osu.ppy.sh/beatmapsets/2180313#osu/4605501",
         "tier": 9.0, "slot": "NM5",
-        "sr": 9.38, "cs": 3.8, "ar": 10.0, "od": 9.8, "bpm": 270, "drain": "1:45"
+        "sr": "9.38", "cs": "3.8", "ar": "10.0", "od": "9.8", "bpm": "270", "drain": "1:45"
     }, {
         "name": "dandeless - macro.wav [Boop]",
         "link": "https://osu.ppy.sh/beatmapsets/2180436#osu/4605752",
         "tier": 9.0, "slot": "NM6",
-        "sr": 7.11, "cs": 5.5, "ar": 7.3, "od": 8.0, "bpm": 172, "drain": "2:08"
+        "sr": "7.11", "cs": "5.5", "ar": "7.3", "od": "8.0", "bpm": "172", "drain": "2:08"
     }, {
         "name": "Kaneko Chiharu - - FALLEN - [O' Lord, I entrust this body to you—]",
         "link": "https://osu.ppy.sh/beatmapsets/740990#osu/1563135",
         "tier": 9.0, "slot": "HD1",
-        "sr": 8.92, "cs": 5.0, "ar": 10.0, "od": 10.0, "bpm": 210, "drain": "2:46"
+        "sr": "8.92", "cs": "5.0", "ar": "10.0", "od": "10.0", "bpm": "210", "drain": "2:46"
     }, {
         "name": "REDALiCE feat. Ayumi Nomiya - Foughten Field (t+pazolite Remix) [Hell]",
         "link": "https://osu.ppy.sh/beatmapsets/2180302#osu/4605483",
         "tier": 9.0, "slot": "HD2",
-        "sr": 7.70, "cs": 4.0, "ar": 8.0, "od": 9.0, "bpm": 230, "drain": "3:12"
+        "sr": "7.70", "cs": "4.0", "ar": "8.0", "od": "9.0", "bpm": "230", "drain": "3:12"
     }, {
         "name": "ZUN - Meiji Juushichi-nen no Shanghai Alice [Chaos Dance]",
         "link": "https://osu.ppy.sh/beatmapsets/1229515#osu/2556347",
         "tier": 9.0, "slot": "HD3",
-        "sr": 8.37, "cs": 4.5, "ar": 9.6, "od": 10.0, "bpm": 144, "drain": "1:22"
+        "sr": "8.37", "cs": "4.5", "ar": "9.6", "od": "10.0", "bpm": "144", "drain": "1:22"
     }, {
         "name": "Schwank & Tanger - deathwish [Requiem]",
         "link": "https://osu.ppy.sh/beatmapsets/1859838#osu/4629735",
         "tier": 9.0, "slot": "HD4",
-        "sr": 8.30, "cs": 4.0, "ar": 9.8, "od": 10.0, "bpm": 220, "drain": "3:06"
+        "sr": "8.30", "cs": "4.0", "ar": "9.8", "od": "10.0", "bpm": "220", "drain": "3:06"
     }, {
         "name": "Camellia - Feelin Sky (Camellia's \"200step\" Self-remix) [Ambivalence]",
         "link": "https://osu.ppy.sh/beatmapsets/623927#osu/1314987",
         "tier": 9.0, "slot": "HR1",
-        "sr": 8.21, "cs": 5.2, "ar": 10.0, "od": 10.0, "bpm": 200, "drain": "6:00"
+        "sr": "8.21", "cs": "5.2", "ar": "10.0", "od": "10.0", "bpm": "200", "drain": "6:00"
     }, {
         "name": "telemist - peanut butter jelly time 2020 [nuts]",
         "link": "https://osu.ppy.sh/beatmapsets/1372046#osu/2836542",
         "tier": 9.0, "slot": "HR2",
-        "sr": 8.71, "cs": 7.3, "ar": 10.0, "od": 10.0, "bpm": 160, "drain": "3:35"
+        "sr": "8.71", "cs": "7.3", "ar": "10.0", "od": "10.0", "bpm": "160", "drain": "3:35"
     }, {
         "name": "Inaba Kumori - Lost Umbrella (7_7 bootleg) [tourney ver.]",
         "link": "https://osu.ppy.sh/beatmapsets/2180260#osu/4605402",
         "tier": 9.0, "slot": "HR3",
-        "sr": 8.65, "cs": 4.8, "ar": 10.0, "od": 10.0, "bpm": 170, "drain": "2:25"
+        "sr": "8.65", "cs": "4.8", "ar": "10.0", "od": "10.0", "bpm": "170", "drain": "2:25"
     }, {
         "name": "Sota Fujimori - polygon [unhinged]",
         "link": "https://osu.ppy.sh/beatmapsets/559097#osu/1182462",
         "tier": 9.0, "slot": "HR4",
-        "sr": 8.17, "cs": 4.8, "ar": 10.0, "od": 10.0, "bpm": 170, "drain": "2:25"
+        "sr": "8.17", "cs": "4.8", "ar": "10.0", "od": "10.0", "bpm": "170", "drain": "2:25"
     }, {
         "name": "fourfolium - Now Loading!!!! [Press SELECT]",
         "link": "https://osu.ppy.sh/beatmapsets/488630#osu/1041727",
         "tier": 9.0, "slot": "DT1",
-        "sr": 9.52, "cs": 4.2, "ar": 10.5, "od": 10.4, "bpm": 289.5, "drain": "2:45"
+        "sr": "9.52", "cs": "4.2", "ar": "10.5", "od": "10.4", "bpm": "289", "drain": "2:45"
     }, {
         "name": "Erio o Kamattechan - os-Uchuujin(Asterisk Makina Remix) [Mattress Actress]",
         "link": "https://osu.ppy.sh/beatmapsets/325301#osu/722596",
         "tier": 9.0, "slot": "DT2",
-        "sr": 8.95, "cs": 4.0, "ar": 10.3, "od": 10.0, "bpm": 262.5, "drain": "3:29"
+        "sr": "8.95", "cs": "4.0", "ar": "10.3", "od": "10.0", "bpm": "262", "drain": "3:29"
     }, {
         "name": "Demetori - Wind God Girl [Extra]",
         "link": "https://osu.ppy.sh/beatmapsets/20949#osu/74684",
         "tier": 9.0, "slot": "DT3",
-        "sr": 9.01, "cs": 4.0, "ar": 10.3, "od": 10.4, "bpm": 300, "drain": "3:13"
+        "sr": "9.01", "cs": "4.0", "ar": "10.3", "od": "10.4", "bpm": "300", "drain": "3:13"
     }, {
         "name": "Chocofan - LUCKY CAT [LUCKY CAT]",
         "link": "https://osu.ppy.sh/beatmapsets/1980142#osu/4111667",
         "tier": 9.0, "slot": "DT4",
-        "sr": 8.75, "cs": 4.0, "ar": 9.7, "od": 9.8, "bpm": 250.5, "drain": "1:11"
+        "sr": "8.75", "cs": "4.0", "ar": "9.7", "od": "9.8", "bpm": "250", "drain": "1:11"
     }, {
         "name": "Kyutatsuki - SOUND ARCHITECT [Melodic Labyrinth]",
         "link": "https://osu.ppy.sh/beatmapsets/2180470#osu/4605810",
         "tier": 9.0, "slot": "TB",
-        "sr": 9.00, "cs": 4.2, "ar": 10.0, "od": 10.0, "bpm": 222, "drain": "5:41"
+        "sr": "9.00", "cs": "4.2", "ar": "10.0", "od": "10.0", "bpm": "222", "drain": "5:41"
     }
 ]
