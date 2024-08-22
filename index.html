@@ -187,7 +187,8 @@
         function getImageUrl(link) {
             const match = link ? link.match(/\/beatmapsets\/(\d+?)#/): null;
             const mapId = match ? match[1] : '';
-            return mapId ? `https://assets.ppy.sh/beatmaps/${mapId}/covers/cover.jpg` : 'https://assets.ppy.sh/beatmaps/2078790/covers/cover.jpg';
+            return mapId ? `https://assets.ppy.sh/beatmaps/${mapId}/covers/cover.jpg` : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
+            // transparent 1x1 pixel image if failed
         }
         
         function clearTable() {
