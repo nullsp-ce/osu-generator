@@ -94,6 +94,8 @@
         "tier": 9.0,
         "slot": "TB"
     },
+
+    
     {
         "link": "https://osu.ppy.sh/beatmapsets/1279689#osu/3238236",
         "tier": 9.0,
@@ -187,6 +189,200 @@
     {
         "link": "https://osu.ppy.sh/beatmapsets/2180470#osu/4605810",
         "tier": 9.0,
+        "slot": "TB"
+    },
+
+    
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1347859#osu/2791233",
+        "tier": 8.5,
+        "slot": "NM1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/2075427#osu/4344782",
+        "tier": 8.5,
+        "slot": "NM2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1967975#osu/4081860",
+        "tier": 8.5,
+        "slot": "NM3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1815854#osu/3725672",
+        "tier": 8.5,
+        "slot": "NM4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/454451#osu/974352",
+        "tier": 8.5,
+        "slot": "NM5"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/742648#osu/1566379",
+        "tier": 8.5,
+        "slot": "NM6"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/80562#osu/224127",
+        "tier": 8.5,
+        "slot": "HD1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1651107#osu/3370732",
+        "tier": 8.5,
+        "slot": "HD2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1988562#osu/4131030",
+        "tier": 8.5,
+        "slot": "HD3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1894681#osu/3904576",
+        "tier": 8.5,
+        "slot": "HD4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1884418#osu/3879889",
+        "tier": 8.5,
+        "slot": "HR1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/737340#osu/1556011",
+        "tier": 8.5,
+        "slot": "HR2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1645999#osu/3359755",
+        "tier": 8.5,
+        "slot": "HR3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1707295#osu/3606794",
+        "tier": 8.5,
+        "slot": "HR4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/2075442#osu/4344814",
+        "tier": 8.5,
+        "slot": "DT1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/469148#osu/1007546",
+        "tier": 8.5,
+        "slot": "DT2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/80214#osu/226279",
+        "tier": 8.5,
+        "slot": "DT3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/422369#osu/916972",
+        "tier": 8.5,
+        "slot": "DT4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1438177#osu/2958956",
+        "tier": 8.5,
+        "slot": "TB"
+    },
+
+
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1691965#osu/3457382",
+        "tier": 8.7,
+        "slot": "NM1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1902907#osu/4377067",
+        "tier": 8.7,
+        "slot": "NM2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/2176790#osu/4596742",
+        "tier": 8.7,
+        "slot": "NM3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/2176782#osu/4596731",
+        "tier": 8.7,
+        "slot": "NM4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1975611#osu/4100383",
+        "tier": 8.7,
+        "slot": "NM5"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1982264#osu/4116631",
+        "tier": 8.7,
+        "slot": "NM6"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1073052#osu/2245705",
+        "tier": 8.7,
+        "slot": "HD1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1621249#osu/3310130",
+        "tier": 8.7,
+        "slot": "HD2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1185135#osu/4186238",
+        "tier": 8.7,
+        "slot": "HD3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/961061#osu/2012009",
+        "tier": 8.7,
+        "slot": "HD4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/280107#osu/633993",
+        "tier": 8.7,
+        "slot": "HR1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1620087#osu/3307758",
+        "tier": 8.7,
+        "slot": "HR2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/2176809#osu/4596785",
+        "tier": 8.7,
+        "slot": "HR3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1067418#osu/2234808",
+        "tier": 8.7,
+        "slot": "HR4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/234646#osu/544136",
+        "tier": 8.7,
+        "slot": "DT1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/51972#osu/181253",
+        "tier": 8.7,
+        "slot": "DT2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/257165#osu/771858",
+        "tier": 8.7,
+        "slot": "DT3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/155691#osu/381798",
+        "tier": 8.7,
+        "slot": "DT4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1902178#osu/3921649",
+        "tier": 8.7,
         "slot": "TB"
     }
 ]
