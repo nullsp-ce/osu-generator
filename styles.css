@@ -1,0 +1,41 @@
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+body {
+    font-family: "Inter", "Roboto", "Montserrat", "Arial", sans-serif;
+    background-color: #1c1719;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-weight: bold;
+    color: #ff66b3;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1c1719;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ff66b3;
+    background-color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #222222;
+}
+.data-display {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
