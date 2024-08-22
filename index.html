@@ -65,20 +65,26 @@
                 .then(response => response.json())
                 .then(data => {
                     // Filter maps based on the input tier
-                    const filteredMaps = data.filter(map => {
-                        return Math.abs(map.tier - tierInput) <= 0.1;
-                    });
-
-                    // Group by slot
+                    const filteredMaps = data.filter(map => Math.abs(map.tier - tierInput) <= 0.1);
+                    
+                    // Group maps by slot and select a random map for each slot
                     const slotMap = {};
                     filteredMaps.forEach(map => {
                         if (!slotMap[map.slot]) {
-                            slotMap[map.slot] = map;
+                            slotMap[map.slot] = [];
                         }
+                        slotMap[map.slot].push(map);
+                    });
+
+                    // Randomly select one map per slot
+                    const selectedMaps = {};
+                    Object.keys(slotMap).forEach(slot => {
+                        const maps = slotMap[slot];
+                        selectedMaps[slot] = maps[Math.floor(Math.random() * maps.length)];
                     });
 
                     // Populate the table
-                    populateTable(slotMap);
+                    populateTable(selectedMaps);
                 })
                 .catch(error => console.error('Error fetching data:', error));
         });
