@@ -204,23 +204,27 @@
             try {
                 const response = await fetch(url);
                 const html = await response.text();
-
+        
                 const jsonScriptRegex = /<script id="json-beatmapset" type="application\/json">([\s\S]*?)<\/script>/;
                 const jsonMatch = html.match(jsonScriptRegex);
                 if (!jsonMatch) throw new Error('JSON data not found');
-
+        
                 const jsonData = JSON.parse(jsonMatch[1]);
-
+                const beatmapIdRegex = /\/osu\/(\d+)/;
+                const beatmapId = url.match(beatmapIdRegex)[1];
+        
+                const beatmap = jsonData.beatmaps.find(b => b.id == beatmapId);
+                
                 const artist = jsonData.artist || 'Unknown Artist';
                 const title = jsonData.title || 'Unknown Title';
-                const version = jsonData.version || 'Unknown Version';
-                const cs = jsonData.difficulty.cs || 'Unknown';
-                const ar = jsonData.difficulty.ar || 'Unknown';
-                const od = jsonData.difficulty.od || 'Unknown';
-                const sr = jsonData.difficulty.star_rating || 'Unknown';
+                const version = beatmap.version || 'Unknown Version';
+                const cs = beatmap.cs || 'Unknown';
+                const ar = beatmap.ar || 'Unknown';
+                const od = beatmap.accuracy || 'Unknown';
+                const sr = beatmap.difficulty_rating || 'Unknown';
                 const bpm = jsonData.bpm || 'Unknown';
-                const drain = jsonData.hit_length || 'Unknown';
-
+                const drain = convertToMinutes(beatmap.hit_length) || 'Unknown';
+        
                 return {
                     title: `${artist} - ${title} [${version}]`,
                     cs,
@@ -243,6 +247,13 @@
                 };
             }
         }
+        
+        function convertToMinutes(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+        }
+
 
         function clearTable() {
             const tbody = document.getElementById('dataDisplay').getElementsByTagName('tbody')[0];
