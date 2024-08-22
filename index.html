@@ -44,9 +44,7 @@
             margin-top: 20px;
         }
         th, td {
-            padding: 6px 10px; /* Reduced padding */
-            text-align: left;
-            border-bottom: 1px solid #ddd;
+            text-align: center;
         }
         th {
             background-color: #333;
@@ -77,7 +75,11 @@
             color: #6563de;
         }
         td.sr {
+            font-weight: bold;
             color: #ffd966;
+        }
+        td.mapname {
+            text-align: left;
         }
     </style>
 </head>
@@ -165,7 +167,7 @@
                 row.innerHTML = `
                     <td class="slot-group">${slot}</td>
                     <td><img src="${getImageUrl(map.link)}" alt="Map Image"></td>
-                    <td><a href="${map.link || '#'}" target="_blank">${map.name || 'Unknown'}</a></td>
+                    <td class="mapname"><a href="${map.link || '#'}" target="_blank">${map.name || 'Unknown'}</a></td>
                     <td class="sr">${map.sr || '?'}</td>
                     <td>${map.cs || '?'}</td>
                     <td>${map.ar || '?'}</td>
