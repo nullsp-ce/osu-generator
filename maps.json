@@ -384,5 +384,97 @@
         "link": "https://osu.ppy.sh/beatmapsets/1902178#osu/3921649",
         "tier": 8.7,
         "slot": "TB"
+    },
+
+
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1835522#osu/3768437",
+        "tier": 8.6,
+        "slot": "NM1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1907067#osu/3932615",
+        "tier": 8.6,
+        "slot": "NM2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1333119#osu/2764447",
+        "tier": 8.6,
+        "slot": "NM3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1859838#osu/4619056",
+        "tier": 8.6,
+        "slot": "NM4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1977700#osu/4105538",
+        "tier": 8.6,
+        "slot": "NM5"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1867123#osu/3840801",
+        "tier": 8.6,
+        "slot": "NM6"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1769121#osu/3772513",
+        "tier": 8.6,
+        "slot": "HD1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1550863#osu/3620355",
+        "tier": 8.6,
+        "slot": "HD2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1973658#osu/4095750",
+        "tier": 8.6,
+        "slot": "HD3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1933524#osu/3995174",
+        "tier": 8.6,
+        "slot": "HD4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1794786#osu/3678729",
+        "tier": 8.6,
+        "slot": "HR1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/372850#osu/833605",
+        "tier": 8.6,
+        "slot": "HR2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1581126#osu/3229225",
+        "tier": 8.6,
+        "slot": "HR3"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1471137#osu/3020221",
+        "tier": 8.6,
+        "slot": "HR4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/287873#osu/652234",
+        "tier": 8.6,
+        "slot": "DT1"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/490662#osu/1045757",
+        "tier": 8.6,
+        "slot": "DT2"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/813036#osu/1705176",
+        "tier": 8.6,
+        "slot": "DT4"
+    },
+    {
+        "link": "https://osu.ppy.sh/beatmapsets/1863695#osu/3832625",
+        "tier": 8.6,
+        "slot": "TB"
     }
 ]
