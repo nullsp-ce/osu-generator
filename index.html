@@ -162,26 +162,16 @@
                 const row = document.createElement('tr');
                 const map = slotMap[slot] || {};
 
-                const mapDetails = map.link ? await fetchMapDetails(map.link) : {
-                    title: 'Unknown Title',
-                    cs: 'Unknown',
-                    ar: 'Unknown',
-                    od: 'Unknown',
-                    sr: 'Unknown',
-                    bpm: 'Unknown',
-                    drain: 'Unknown'
-                };
-
                 row.innerHTML = `
                     <td class="slot-group">${slot}</td>
                     <td><img src="${getImageUrl(map.link)}" alt="Map Image"></td>
-                    <td><a href="${map.link || '#'}" target="_blank">${mapDetails.title}</a></td>
-                    <td class="sr">${map.sr || mapDetails.sr}</td>
-                    <td>${map.cs || mapDetails.cs}</td>
-                    <td>${map.ar || mapDetails.ar}</td>
-                    <td>${map.od || mapDetails.od}</td>
-                    <td>${map.bpm || mapDetails.bpm}</td>
-                    <td>${map.drain || mapDetails.drain}</td>
+                    <td><a href="${map.link}" target="_blank">${map.name}</a></td>
+                    <td class="sr">${map.sr}</td>
+                    <td>${map.cs}</td>
+                    <td>${map.ar}</td>
+                    <td>${map.od}</td>
+                    <td>${map.bpm}</td>
+                    <td>${map.drain}</td>
                 `;
 
                 if (slot.startsWith('NM')) row.classList.add('nm-group');
@@ -199,62 +189,7 @@
             const mapId = match ? match[1] : '';
             return mapId ? `https://assets.ppy.sh/beatmaps/${mapId}/covers/cover.jpg` : 'https://assets.ppy.sh/beatmaps/2078790/covers/cover.jpg';
         }
-
-        async function fetchMapDetails(url) {
-            try {
-                const response = await fetch(url);
-                const html = await response.text();
         
-                const jsonScriptRegex = /<script id="json-beatmapset" type="application\/json">([\s\S]*?)<\/script>/;
-                const jsonMatch = html.match(jsonScriptRegex);
-                if (!jsonMatch) throw new Error('JSON data not found');
-        
-                const jsonData = JSON.parse(jsonMatch[1]);
-                const beatmapIdRegex = /\/osu\/(\d+)/;
-                const beatmapId = url.match(beatmapIdRegex)[1];
-        
-                const beatmap = jsonData.beatmaps.find(b => b.id == beatmapId);
-                
-                const artist = jsonData.artist || 'Unknown Artist';
-                const title = jsonData.title || 'Unknown Title';
-                const version = beatmap.version || 'Unknown Version';
-                const cs = beatmap.cs || 'Unknown';
-                const ar = beatmap.ar || 'Unknown';
-                const od = beatmap.accuracy || 'Unknown';
-                const sr = beatmap.difficulty_rating || 'Unknown';
-                const bpm = jsonData.bpm || 'Unknown';
-                const drain = convertToMinutes(beatmap.hit_length) || 'Unknown';
-        
-                return {
-                    title: `${artist} - ${title} [${version}]`,
-                    cs,
-                    ar,
-                    od,
-                    sr,
-                    bpm,
-                    drain
-                };
-            } catch (error) {
-                console.error('Error fetching map details:', error);
-                return {
-                    title: 'Unknown Title',
-                    cs: 'Unknown',
-                    ar: 'Unknown',
-                    od: 'Unknown',
-                    sr: 'Unknown',
-                    bpm: 'Unknown',
-                    drain: 'Unknown'
-                };
-            }
-        }
-        
-        function convertToMinutes(seconds) {
-            const minutes = Math.floor(seconds / 60);
-            const remainingSeconds = seconds % 60;
-            return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
-        }
-
-
         function clearTable() {
             const tbody = document.getElementById('dataDisplay').getElementsByTagName('tbody')[0];
             tbody.innerHTML = ''; // Clear the table
