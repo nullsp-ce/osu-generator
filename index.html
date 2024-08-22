@@ -165,13 +165,13 @@
                 row.innerHTML = `
                     <td class="slot-group">${slot}</td>
                     <td><img src="${getImageUrl(map.link)}" alt="Map Image"></td>
-                    <td><a href="${map.link}" target="_blank">${map.name}</a></td>
-                    <td class="sr">${map.sr}</td>
-                    <td>${map.cs}</td>
-                    <td>${map.ar}</td>
-                    <td>${map.od}</td>
-                    <td>${map.bpm}</td>
-                    <td>${map.drain}</td>
+                    <td><a href="${map.link || '#'}" target="_blank">${map.name || 'Unknown'}</a></td>
+                    <td class="sr">${map.sr || '?'}</td>
+                    <td>${map.cs || '?'}</td>
+                    <td>${map.ar || '?'}</td>
+                    <td>${map.od || '?'}</td>
+                    <td>${map.bpm || '?'}</td>
+                    <td>${map.drain || '?'}</td>
                 `;
 
                 if (slot.startsWith('NM')) row.classList.add('nm-group');
@@ -185,7 +185,7 @@
         }
 
         function getImageUrl(link) {
-            const match = link.match(/\/beatmapsets\/(\d+?)#/);
+            const match = link ? link.match(/\/beatmapsets\/(\d+?)#/): null;
             const mapId = match ? match[1] : '';
             return mapId ? `https://assets.ppy.sh/beatmaps/${mapId}/covers/cover.jpg` : 'https://assets.ppy.sh/beatmaps/2078790/covers/cover.jpg';
         }
