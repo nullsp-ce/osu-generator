@@ -1,9 +1,39 @@
 [
     {
+        "name": "Eric Saade - Popular [Celebrity]",
+        "link": "https://osu.ppy.sh/beatmapsets/1343420#osu/3591213",
+        "tier": 9.0, "slot": "NM1",
+        "sr": 9.37, "cs": 4.0, "ar": 10.0, "od": 10.0, "bpm": 250, "drain": "2:34"
+    }, {
         "name": "Raimukun - Icyxis ~True Ending~ [Blessed of Aggelos ~Fake Sanctity~]",
         "link": "https://osu.ppy.sh/beatmapsets/2078621#osu/4352514",
         "tier": 9.0, "slot": "NM2",
         "sr": 9.23, "cs": 4.0, "ar": 9.8, "od": 9.5, "bpm": 222, "drain": "4:05"
+    }, {
+        "name": "Rise Against - The Eco-Terrorist In Me [Albinauric]",
+        "link": "https://osu.ppy.sh/beatmapsets/2078778#osu/4352883",
+        "tier": 9.0, "slot": "NM3",
+        "sr": 8.70, "cs": 4.2, "ar": 9.7, "od": 9.2, "bpm": 170, "drain": "2:22"
+    }, {
+        "name": "Zekk - Ashes [Nanachi x Aqua_ x Kristalyze x Nagaraia]",
+        "link": "https://osu.ppy.sh/beatmapsets/1341787#osu/3256928",
+        "tier": 9.0, "slot": "NM4",
+        "sr": 8.09, "cs": 4.3, "ar": 9.8, "od": 8.8, "bpm": 200, "drain": "1:45"
+    }, {
+        "name": "Camellia - Xeroa [Zelq's MAXIMUM+]",
+        "link": "https://osu.ppy.sh/beatmapsets/1341787#osu/3256928",
+        "tier": 9.0, "slot": "NM5",
+        "sr": 9.01, "cs": 3.5, "ar": 9.8, "od": 9.4, "bpm": 301, "drain": "1:51"
+    }, {
+        "name": "Ekcle - Crafted In Ice [CENSOLED's Extravaganza]",
+        "link": "https://osu.ppy.sh/beatmapsets/1868244#osu/3876888",
+        "tier": 9.0, "slot": "HR3",
+        "sr": 8.19, "cs": 5.2, "ar": 10.0, "od": 10.0, "bpm": 180, "drain": "3:50"
+    }, {
+        "name": "Mage - The Words I Never Said [Regret]",
+        "link": "https://osu.ppy.sh/beatmapsets/1470072#osu/3018109",
+        "tier": 9.0, "slot": "DT2",
+        "sr": 8.86, "cs": 3.9, "ar": 10.5, "od": 10.6, "bpm": 258, "drain": "3:17"
     }, {
         "name": "KEMOMIMI EDM SQUAD - THE PLATINUM TROPHY [THE BATTLE FOR TROPHY]",
         "link": "https://osu.ppy.sh/beatmapsets/2078790#osu/4352925",
