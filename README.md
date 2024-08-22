@@ -1,2 +1,2 @@
 # osu-generator
-webapp that creates randomly generated osu! tournament mappools
+A webapp that creates randomly generated osu! tournament mappools. 
