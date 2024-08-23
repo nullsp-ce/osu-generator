@@ -18,6 +18,11 @@
             font-weight: bold;
             color: #44aadd;
         }
+        .beta {
+            font-size: 0.8em;
+            color: #171a1c;
+            font-weight: normal;
+        }
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -128,8 +133,10 @@
 
 <body>
     <div class="container">
-        <h1>osu!gen</h1>
+        <h1>osu!gen <span class="beta">beta</span></h1>
+        <p style="color: #171a1c; font-size: 0.8em;">Created by <a href="https://osu.ppy.sh/users/19716615">nullsp_ce</a></p>
         <p>This site randomly generates osu! tournament mappools.</p>
+        <p>Extra slots (NM7, HD4, HR4, FM etc.) might be generated. You can ignore them if you want a smaller pool.</p>
         <p>Enter target star rating (6.0 to 9.0):</p>
         <input type="number" id="tierInput" min="6.0" max="9.0" step="0.1">
         <button id="loadData">Generate</button>
@@ -201,7 +208,7 @@
                            'HD1', 'HD2', 'HD3', 'HD4',
                            'HR1', 'HR2', 'HR3', 'HR4',
                            'DT1', 'DT2', 'DT3', 'DT4', 
-                           'FM1', 'FM2', 'FM3', 'TB'];
+                           'FM1', 'FM2', 'FM3', 'FM4', 'TB'];
 
             for (const slot of slots) {
                 const row = document.createElement('tr');
