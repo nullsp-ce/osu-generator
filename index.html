@@ -98,6 +98,25 @@
             font-weight: bold;
             color: #ffd966;
         }
+        /* Apply spacing between slot categories */
+        .nm-group + .hd-group,
+        .hd-group + .hr-group,
+        .hr-group + .dt-group,
+        .dt-group + .fm-group,
+        .fm-group + .tb-group {
+            margin-top: 10px;
+        }
+        /* Set fixed width for SR, CS, AR, OD, BPM, Drain columns */
+        td.sr, td.cs, td.ar, td.od, td.bpm, td.drain {
+            width: 50px;
+        }
+        /* Limit the width of the "Artist - Title [Difficulty]" column */
+        td.mapname {
+            max-width: 720px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; /* Prevents wrapping to a new line */
+        }
     </style>
 </head>
 
