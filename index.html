@@ -107,6 +107,9 @@
         }
         td.slot-group {
             font-weight: bold;
+            width: 50px;
+            min-width: 50px;
+            max-width: 50px;
         }
         .nm-group td.slot-group {
             color: #7cff4f;
@@ -146,22 +149,16 @@
             font-weight: bold;
             color: #ffd966;
         }
-        /* Apply spacing between slot categories */
-        .nm-group + .hd-group,
-        .hd-group + .hr-group,
-        .hr-group + .dt-group,
-        .dt-group + .fm-group,
-        .fm-group + .tb-group {
-            margin-top: 10px;
-        }
-        tbody tr + tr.slot-group {
-            margin-top: 10px;
-        }
-        /* Set fixed width for SR, CS, AR, OD, BPM, Drain columns */
         td.sr, td.cs, td.ar, td.od, td.bpm, td.drain {
             width: 50px;
             min-width: 50px;
             max-width: 50px;
+            text-align: center;
+        }
+        td.banner {
+            width: 110px;
+            min-width: 110px;
+            max-width: 110px;
             text-align: center;
         }
         #instructions {
@@ -287,14 +284,14 @@
 
                 row.innerHTML = `
                     <td class="slot-group">${slot}</td>
-                    <td><img src="${getImageUrl(map.link)}" alt="Map Image"></td>
+                    <td class="banner"><img src="${getImageUrl(map.link)}" alt="Map Image"></td>
                     <td class="mapname"><a href="${map.link || '#'}" target="_blank">${map.name || ''}</a></td>
                     <td class="sr">${map.sr || ''}</td>
-                    <td>${map.cs || ''}</td>
-                    <td>${map.ar || ''}</td>
-                    <td>${map.od || ''}</td>
-                    <td>${map.bpm || ''}</td>
-                    <td>${map.drain || ''}</td>
+                    <td class="cs">${map.cs || ''}</td>
+                    <td class="ar">${map.ar || ''}</td>
+                    <td class="od">${map.od || ''}</td>
+                    <td class="bpm">${map.bpm || ''}</td>
+                    <td class="drain">${map.drain || ''}</td>
                 `;
 
                 // Insert an empty row as a spacer before each slot group
