@@ -8,35 +8,35 @@
     <style>
         body {
             font-family: "Inter", "Roboto", "Montserrat", "Arial", sans-serif;
-            background-color: #1c1719;
+            background-color: #171a1c;
             color: #ffffff;
             margin: 0;
             padding: 0;
         }
         h1 {
             font-weight: bold;
-            color: #ff66b3;
+            color: #44aadd;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #1c1719;
+            background-color: #22282a;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         button {
             padding: 8px 15px;
             font-size: 1em;
-            color: #ff66b3;
-            background-color: #121212;
+            color: #ffffff;
+            background-color: #44aadd;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             margin-bottom: 20px;
         }
         button:hover {
-            background-color: #222222;
+            background-color: #66ccff;
         }
         table {
             width: 100%;
@@ -47,14 +47,14 @@
             text-align: center;
         }
         th {
-            background-color: #333;
+            background-color: #2e3538;
         }
         td img {
             width: 80px;
             height: 25px;
         }
         td {
-            background-color: #282828;
+            background-color: #22282a;
         }
         td.slot-group {
             font-weight: bold;
@@ -77,12 +77,19 @@
         .tb-group td.slot-group {
             color: #6563de;
         }
-        td.sr {
-            font-weight: bold;
-            color: #ffd966;
+        th.left {
+            text-align: left;
         }
         td.mapname {
             text-align: left;
+        }
+        th.gold {
+            font-weight: bold;
+            color: #ffd966;
+        }
+        td.sr {
+            font-weight: bold;
+            color: #ffd966;
         }
     </style>
 </head>
@@ -100,8 +107,8 @@
                 <tr>
                     <th>Slot</th>
                     <th>Banner</th>
-                    <th>Artist - Title [Difficulty]</th>
-                    <th>★SR</th>
+                    <th class="left">Artist - Title [Difficulty]</th>
+                    <th class="gold">★SR</th>
                     <th>CS</th>
                     <th>AR</th>
                     <th>OD</th>
