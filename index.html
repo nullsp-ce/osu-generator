@@ -44,15 +44,25 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            table-layout: fixed;
         }
         thead {
-            border-radius: 6px;
+            background-color: #2e3538;
             overflow: hidden; /* Ensures the corners are visible */
+        }
+        thead th:first-child {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+        thead th:last-child {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
         }
         th, td {
             text-align: center;
         }
         th {
+            padding: 2px;
             background-color: #2e3538;
         }
         td img {
@@ -89,6 +99,10 @@
         }
         td.mapname {
             text-align: left;
+            max-width: 700px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         th.gold {
             font-weight: bold;
@@ -109,13 +123,6 @@
         /* Set fixed width for SR, CS, AR, OD, BPM, Drain columns */
         td.sr, td.cs, td.ar, td.od, td.bpm, td.drain {
             width: 50px;
-        }
-        /* Limit the width of the "Artist - Title [Difficulty]" column */
-        td.mapname {
-            max-width: 720px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap; /* Prevents wrapping to a new line */
         }
     </style>
 </head>
