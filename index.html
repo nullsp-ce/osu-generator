@@ -45,6 +45,10 @@
             border-collapse: collapse;
             margin-top: 20px;
         }
+        thead {
+            border-radius: 6px;
+            overflow: hidden; /* Ensures the corners are visible */
+        }
         th, td {
             text-align: center;
         }
@@ -54,7 +58,7 @@
         td img {
             width: 90px;
             height: 25px;
-            border-radius: 4px;
+            border-radius: 6px;
         }
         td {
             background-color: #22282a;
@@ -93,12 +97,6 @@
         td.sr {
             font-weight: bold;
             color: #ffd966;
-        }
-        th:first-child {
-            border-left-radius: 4px;
-        }
-        th:last-child {
-            border-right-radius: 4px;
         }
     </style>
 </head>
