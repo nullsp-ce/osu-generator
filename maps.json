@@ -270,5 +270,98 @@
         "link": "https://osu.ppy.sh/beatmapsets/1914560#osu/3949741",
         "tier": 6.4, "slot": "TB",
         "sr": "6.58", "cs": "4.0", "ar": "9.4", "od": "9.0", "bpm": "192", "drain": "5:35"
+    },
+
+
+    {
+        "name": "Helblinde - Orbital strike [Final Boss]",
+        "link": "https://osu.ppy.sh/beatmapsets/1835522#osu/3768437",
+        "tier": 8.6, "slot": "NM1",
+        "sr": "8.40", "cs": "4.0", "ar": "9.8", "od": "9.8", "bpm": "195", "drain": "3:17"
+    }, {
+        "name": "Shadow Of Intent - The Coming Fire [A Solemn Farewell]",
+        "link": "https://osu.ppy.sh/beatmapsets/1907067#osu/3932615",
+        "tier": 8.6, "slot": "NM2",
+        "sr": "8.57", "cs": "4.3", "ar": "10.0", "od": "9.8", "bpm": "210", "drain": "3:26"
+    }, {
+        "name": "Yousei Teikoku - Paradiso Inferno [nerfed]",
+        "link": "https://osu.ppy.sh/beatmapsets/1333119#osu/2764447",
+        "tier": 8.6, "slot": "NM3",
+        "sr": "7.79", "cs": "4.0", "ar": "9.7", "od": "9.0", "bpm": "170", "drain": "3:29"
+    }, {
+        "name": "Schwank & Tanger - deathwish [Requiem]",
+        "link": "https://osu.ppy.sh/beatmapsets/1859838#osu/3866187",
+        "tier": 8.6, "slot": "NM4",
+        "sr": "8.47", "cs": "4.0", "ar": "9.3", "od": "9.0", "bpm": "220", "drain": "3:06"
+    }, {
+        "name": "rN - onostrapha [marionette]",
+        "link": "https://osu.ppy.sh/beatmapsets/1977700#osu/4105538",
+        "tier": 8.6, "slot": "NM5",
+        "sr": "8.34", "cs": "3.7", "ar": "9.8", "od": "9.5", "bpm": "239", "drain": "2:17"
+    }, {
+        "name": "Schwank - 1.78 [Money makes the world go round.]",
+        "link": "https://osu.ppy.sh/beatmapsets/1867123#osu/3840801",
+        "tier": 8.6, "slot": "NM6",
+        "sr": "5.82", "cs": "3.9", "ar": "6.0", "od": "8.0", "bpm": "200", "drain": "2:39"
+    }, {
+        "name": "UKRampage - Replica feat. mami [Dailycare's Facsimile]",
+        "link": "https://osu.ppy.sh/beatmapsets/1769121#osu/3772513",
+        "tier": 8.6, "slot": "HD1",
+        "sr": "8.59", "cs": "4.0", "ar": "9.9", "od": "9.6", "bpm": "240", "drain": "3:02"
+    }, {
+        "name": "Sampling Masters MEGA - Dazzle hop [Clash AR8]",
+        "link": "https://osu.ppy.sh/beatmapsets/1550863#osu/3620355",
+        "tier": 8.6, "slot": "HD2",
+        "sr": "6.69", "cs": "5.5", "ar": "8.0", "od": "8.5", "bpm": "220", "drain": "2:08"
+    }, {
+        "name": "fiend - Fever Dream (feat. yzzyx) [serene worlds(ar9.6)]",
+        "link": "https://osu.ppy.sh/beatmapsets/1973658#osu/4095750",
+        "tier": 8.6, "slot": "HD3",
+        "sr": "7.85", "cs": "4.0", "ar": "9.6", "od": "9.0", "bpm": "170", "drain": "2:21"
+    }, {
+        "name": "pm04034 - sn4pside [4]",
+        "link": "https://osu.ppy.sh/beatmapsets/1933524#osu/3995174",
+        "tier": 8.6, "slot": "HD4",
+        "sr": "7.74", "cs": "4.0", "ar": "9.6", "od": "9.2", "bpm": "130", "drain": "2:25"
+    }, {
+        "name": "MAN WITH A MISSION - When My Devil Rises [DESPAIR (TOURNEY VER.)]",
+        "link": "https://osu.ppy.sh/beatmapsets/1794786#osu/3678729",
+        "tier": 8.6, "slot": "HR1",
+        "sr": "8.28", "cs": "5.2", "ar": "10.0", "od": "10.0", "bpm": "214", "drain": "4:07"
+    }, {
+        "name": "Kuroneko Dungeon - Ryoushi no Umi no Lindwurm [EXK]",
+        "link": "https://osu.ppy.sh/beatmapsets/372850#osu/833605",
+        "tier": 8.6, "slot": "HR2",
+        "sr": "8.49", "cs": "6.9", "ar": "10.0", "od": "10.0", "bpm": "280", "drain": "1:45"
+    }, {
+        "name": "BEMANI Sound Team \"Yvya\" - Vitrum [captin's Extra #8]",
+        "link": "https://osu.ppy.sh/beatmapsets/1581126#osu/3229225",
+        "tier": 8.6, "slot": "HR3",
+        "sr": "8.20", "cs": "5.5", "ar": "10.0", "od": "10.0", "bpm": "146", "drain": "1:59"
+    }, {
+        "name": "katagiri - Angel's Salad [Error 177]",
+        "link": "https://osu.ppy.sh/beatmapsets/1471137#osu/3020221",
+        "tier": 8.6, "slot": "HR4",
+        "sr": "8.14", "cs": "5.2", "ar": "10.0", "od": "10.0", "bpm": "177", "drain": "2:15"
+    }, {
+        "name": "Alipio Martins - Piranha (Maffalda Reloaded Trap Mix) [BD's Gangsta]",
+        "link": "https://osu.ppy.sh/beatmapsets/287873#osu/652234",
+        "tier": 8.6, "slot": "DT1",
+        "sr": "9.03", "cs": "4.0", "ar": "10.5", "od": "10.0", "bpm": "257", "drain": "2:24"
+    }, {
+        "name": "Shoji Meguro - Kimi no Kioku (Aethral Remix) [Remembrance]",
+        "link": "https://osu.ppy.sh/beatmapsets/490662#osu/1045757",
+        "tier": 8.6, "slot": "DT2",
+        "sr": "8.63", "cs": "4.0", "ar": "10.5", "od": "10.1", "bpm": "255", "drain": "3:16"
+    }, {
+        "name": "sanj - last minute (sakuraburst remix) [the nature of withering]",
+        "link": "https://osu.ppy.sh/beatmapsets/813036#osu/1705176",
+        "tier": 8.6, "slot": "DT4",
+        "sr": "8.18", "cs": "4.0", "ar": "10.5", "od": "10.1", "bpm": "261", "drain": "3:34"
+    }, {
+        "name": "gmtn. (witch's slave) - furioso melodia [finale]",
+        "link": "https://osu.ppy.sh/beatmapsets/1863695#osu/3832625",
+        "tier": 8.6, "slot": "TB",
+        "sr": "9.32", "cs": "4.0", "ar": "9.8", "od": "9.4", "bpm": "155", "drain": "5:06"
     }
 ]
