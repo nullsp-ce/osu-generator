@@ -297,6 +297,14 @@
                     <td>${map.drain || ''}</td>
                 `;
 
+                // Insert an empty row as a spacer before each slot group
+                if (slot === 'NM1' || slot === 'HD1' || slot === 'HR1' || slot === 'DT1' || slot === 'FM1' || slot === 'TB') {
+                    const spacerRow = document.createElement('tr');
+                    spacerRow.style.height = '10px';
+                    spacerRow.innerHTML = `<td colspan="9" style="background-color: transparent;"></td>`;
+                    tbody.appendChild(spacerRow);
+                }
+                
                 if (slot.startsWith('NM')) row.classList.add('nm-group');
                 else if (slot.startsWith('HD')) row.classList.add('hd-group');
                 else if (slot.startsWith('HR')) row.classList.add('hr-group');
