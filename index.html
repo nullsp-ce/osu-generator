@@ -42,7 +42,14 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        button {
+        #controls {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #controls button {
+            font-family: "Inter", "Arial", sans-serif;
+            font-weight: bold;
             padding: 8px 15px;
             font-size: 1em;
             color: #ffffff;
@@ -50,7 +57,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-bottom: 20px;
+            margin: 0;
         }
         button:hover {
             color: #ffffff;
@@ -147,9 +154,21 @@
         #instructions {
             margin-bottom: 20px;
         }
-        #controls {
-            display: flex;
-            align-items: center;
+        #controls input {
+            font-family: "Inter", "Arial", sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            padding: 4px;
+            margin: 0 10px;
+            border: 4px solid #2e3538;
+            border-radius: 6px;
+            outline: none;
+            background-color: #171a1c;
+            color: #ffd966;
+        }
+        #controls label {
+            font-size: 1em;
+            margin-right: 10px;
         }
         #tierInput {
             font-family: "Inter", "Arial", sans-serif;
