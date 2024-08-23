@@ -363,5 +363,26 @@
         "link": "https://osu.ppy.sh/beatmapsets/1863695#osu/3832625",
         "tier": 8.6, "slot": "TB",
         "sr": "9.32", "cs": "4.0", "ar": "9.8", "od": "9.4", "bpm": "155", "drain": "5:06"
+    },
+
+
+    {
+        "name": "F A K E S - Last Words [Kaleidoscope]",
+        "link": "https://osu.ppy.sh/beatmapsets/1497474#osu/3069381",
+        "tier": 8.2, "slot": "NM7",
+        "sr": "7.92", "cs": "4.1", "ar": "9.8", "od": "10.0", "bpm": "139", "drain": "3:48"
+    }, {
+        "name": "Kry.exe - SENTiNEL [GUARDiAN]",
+        "link": "https://osu.ppy.sh/beatmapsets/2023743#osu/4215344",
+        "tier": 8.2, "slot": "TB",
+        "sr": "8.23", "cs": "4.0", "ar": "9.8", "od": "9.6", "bpm": "222", "drain": "4:56"
+    },
+    
+    
+    {
+        "name": "Kurokotei x kanemiko - astranelique [Astral Radiance]",
+        "link": "https://osu.ppy.sh/beatmapsets/2234516#osu/4746240",
+        "tier": 7.7, "slot": "TB",
+        "sr": "7.92", "cs": "4.0", "ar": "9.7", "od": "9.3", "bpm": "200", "drain": "5:32"
     }
 ]
