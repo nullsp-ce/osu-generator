@@ -200,12 +200,12 @@
     <div class="container">
         <h1>osu!gen <span class="beta">beta</span></h1>
         <p class="credit">created by <a href="https://osu.ppy.sh/users/19716615" class="grey">nullsp_ce</a></p>
-        <p>This site randomly generates osu! tournament mappools.</p>
+        <p>This site randomly generates osu! tournament mappools. You could use it for quick 1v1 matches, practice in a tournament format, or just for fun.</p>
         <p id="instructions">Extra slots (NM7, HD4, HR4, FM etc.) might be generated. You can ignore them if you want a smaller pool.</p>
 
         <p id="controls">
-            Enter target star rating (6.0 to 9.0):
-            <input type="number" id="tierInput" min="6.0" max="9.0" step="0.1">
+            Enter target star rating (5.5 to 9.0):
+            <input type="number" id="tierInput" min="5.5" max="9.0" step="0.1">
             <button id="loadData">Generate</button>
         </p>
         
@@ -235,8 +235,8 @@
             clearTable();
 
             const tierInput = parseFloat(document.getElementById('tierInput').value);
-            if (isNaN(tierInput) || tierInput < 6.0 || tierInput > 9.0) {
-                alert('Please enter a valid star rating between 6.0 and 9.0');
+            if (isNaN(tierInput) || tierInput < 5.5 || tierInput > 9.0) {
+                alert('Please enter a valid star rating between 5.5 and 9.0');
                 return;
             }
 
