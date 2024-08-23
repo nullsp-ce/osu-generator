@@ -70,7 +70,7 @@
         table {
             font-size: 1em;
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: separate;
             margin-top: 20px;
         }
         thead {
@@ -88,9 +88,9 @@
         th, td {
             font-size: inherit;
             text-align: center;
+            padding: 4px;
         }
         th {
-            padding: 2px;
             background-color: #2e3538;
         }
         td img {
@@ -128,6 +128,7 @@
         td.mapname {
             text-align: left;
             width: 700px;
+            min-width: 500px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -146,11 +147,12 @@
         .hr-group + .dt-group,
         .dt-group + .fm-group,
         .fm-group + .tb-group {
-            margin-top: 10px;
+            border-spacing: 0 10px;
         }
         /* Set fixed width for SR, CS, AR, OD, BPM, Drain columns */
         td.sr, td.cs, td.ar, td.od, td.bpm, td.drain {
             width: 50px;
+            min-width: 50px;
         }
         #instructions {
             margin-bottom: 20px;
