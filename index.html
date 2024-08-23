@@ -152,10 +152,13 @@
             align-items: center;
         }
         #tierInput {
+            font-family: "Inter", "Arial", sans-serif;
+            font-weight: bold;
             font-size: 1em;
-            padding: 2px;
+            padding: 4px;
+            margin-left: 10px;
             margin-right: 10px;
-            border: 2px solid #2e3538;
+            border: 4px solid #2e3538;
             border-radius: 6px;
             outline: none;
             background-color: #171a1c;
@@ -174,7 +177,7 @@
         <p id="controls">
             Enter target star rating (6.0 to 9.0):
             <input type="number" id="tierInput" min="6.0" max="9.0" step="0.1">
-            <button>Generate</button>
+            <button id="loadData">Generate</button>
         </p>
         
         <table id="dataDisplay">
