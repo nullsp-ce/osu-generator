@@ -71,10 +71,12 @@
             font-size: 1em;
             width: 100%;
             border-collapse: separate;
+            border-spacing: 0;
             margin-top: 20px;
         }
-        thead {
+        thead th {
             background-color: #2e3538;
+            padding: 4px;
             overflow: hidden; /* Ensures the corners are visible */
         }
         thead th:first-child {
@@ -97,6 +99,9 @@
             width: 90px;
             height: 25px;
             border-radius: 6px;
+        }
+        tbody tr td {
+            background-color: #22282a;
         }
         td {
             background-color: #22282a;
@@ -147,12 +152,17 @@
         .hr-group + .dt-group,
         .dt-group + .fm-group,
         .fm-group + .tb-group {
-            border-spacing: 0 10px;
+            margin-top: 10px;
+        }
+        tbody tr + tr.slot-group {
+            margin-top: 10px;
         }
         /* Set fixed width for SR, CS, AR, OD, BPM, Drain columns */
         td.sr, td.cs, td.ar, td.od, td.bpm, td.drain {
             width: 50px;
             min-width: 50px;
+            max-width: 50px;
+            text-align: center;
         }
         #instructions {
             margin-bottom: 20px;
