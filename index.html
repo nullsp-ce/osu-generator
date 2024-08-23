@@ -144,6 +144,23 @@
         td.sr, td.cs, td.ar, td.od, td.bpm, td.drain {
             width: 50px;
         }
+        #instructions {
+            margin-bottom: 20px;
+        }
+        #controls {
+            display: flex;
+            align-items: center;
+        }
+        #tierInput {
+            font-size: 1em;
+            padding: 2px;
+            margin-right: 10px;
+            border: 2px solid #2e3538;
+            border-radius: 6px;
+            outline: none;
+            background-color: #171a1c;
+            color: #ffd966;
+        }
     </style>
 </head>
 
@@ -152,10 +169,13 @@
         <h1>osu!gen <span class="beta">beta</span></h1>
         <p class="credit">created by <a href="https://osu.ppy.sh/users/19716615" class="grey">nullsp_ce</a></p>
         <p>This site randomly generates osu! tournament mappools.</p>
-        <p>Extra slots (NM7, HD4, HR4, FM etc.) might be generated. You can ignore them if you want a smaller pool.</p>
-        <p>Enter target star rating (6.0 to 9.0):</p>
-        <input type="number" id="tierInput" min="6.0" max="9.0" step="0.1">
-        <button id="loadData">Generate</button>
+        <p id="instructions">Extra slots (NM7, HD4, HR4, FM etc.) might be generated. You can ignore them if you want a smaller pool.</p>
+
+        <p id="controls">
+            Enter target star rating (6.0 to 9.0):
+            <input type="number" id="tierInput" min="6.0" max="9.0" step="0.1">
+            <button>Generate</button>
+        </p>
         
         <table id="dataDisplay">
             <thead>
