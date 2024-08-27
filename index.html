@@ -282,10 +282,11 @@
                            'DT1', 'DT2', 'DT3', 'DT4', 
                            'FM1', 'FM2', 'FM3', 'FM4', 'TB'];
 
+            let blank_mapname = '';
+            
             for (const slot of slots) {
                 const row = document.createElement('tr');
                 const map = slotMap[slot] || {};
-                const blank_mapname = '';
                 
                 if (slot === 'NM1') {
                     blank_mapname = '(ᵕ—ᴗ—) Sorry, no mappools available at this star rating yet!';
