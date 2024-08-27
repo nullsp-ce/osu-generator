@@ -248,8 +248,8 @@
                 const response = await fetch('maps.json');
                 const data = await response.json();
 
-                // Filter maps to +-0.1 of target sr
-                const filteredMaps = data.filter(map => Math.abs(map.tier - tierInput) <= 0.1);
+                // Filter maps to +-0.1 of target sr (0.11 to avoid errors from floating point rounding)
+                const filteredMaps = data.filter(map => Math.abs(map.tier - tierInput) <= 0.11);
                 
                 // Group maps by slot and select a random map for each slot
                 const slotMap = {};
