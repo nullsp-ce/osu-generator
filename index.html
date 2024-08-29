@@ -140,6 +140,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            font-weight: bold;
         }
         th.gold {
             font-weight: bold;
@@ -297,7 +298,7 @@
                 row.innerHTML = `
                     <td class="slot-group">${slot}</td>
                     <td class="banner"><img src="${getImageUrl(map.link)}" alt="Map Image"></td>
-                    <td class="mapname"><a href="${map.link || '#'}" target="_blank">${map.name || blank_mapname}</a></td>
+                    <td class="mapname"><a href="${map.link || '#'}" target="_blank" style="text-decoration: none;">${map.name || blank_mapname}</a></td>
                     <td class="sr">${map.sr || ''}</td>
                     <td class="cs">${map.cs || ''}</td>
                     <td class="ar">${map.ar || ''}</td>
